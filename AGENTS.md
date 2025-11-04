@@ -35,14 +35,14 @@ Pregnancy-safe exercise plan for a Thai woman, age 40.
 - Scope: the output file is `index.html`. Do not add additional files beyond `AGENTS.md` and `index.html` unless explicitly requested by the project owner.
 
 ## Three‑Session Weeks (Required)
-- Group sessions by Week N. Show the gestational age range for the week (for example, 18 weeks 0 days to 18 weeks 6 days) and the calendar date range if helpful.
+- Group sessions by Week N. Keep week headings concise (for example, “สัปดาห์ที่ 10”). If useful, include gestational age and date range as subtle meta or data attributes — not in the main heading.
 - Each Week must include exactly three Sessions:
   - Session 1 — Strength and Movement Quality (Lower emphasis or full body)
   - Session 2 — Cardio Endurance (treadmill, stationary bicycle, or pool)
   - Session 3 — Strength and Core (Upper emphasis or full body) or Mobility and Core
 - Each Session block must include: session focus, target duration range, and target Rate of Perceived Exertion range.
-- Session sections in order: Warm‑up (Do all), Main Work (one clearly labeled Circuit with rounds and rest), Optional Finisher, Cool‑down (Do all), Pelvic Floor (Do all).
-- For every block header explicitly state whether to “Do all” items or “Pick one”. If not stated, assume “Do all”.
+- Session sections in order: Warm‑up, Main Work (one clearly labeled Circuit with rounds and rest), Optional Finisher, Cool‑down, Pelvic Floor.
+- Default is “do all”. Do not label blocks with “ทำทั้งหมด/Do all”. Only mark choice blocks as “เลือกอย่างใดอย่างหนึ่ง/Pick one”.
 - Scheduling guidance: spread the three sessions across the week with at least one rest day between (for example, Monday, Wednesday, Saturday). Optional light walking or swimming on non‑session days.
 - Weekly volume target: approximately 150 or more minutes of moderate activity across all days (adjust as needed). The three programmed sessions should provide the majority; optional easy walking can top up as desired.
 
@@ -55,7 +55,7 @@ Pregnancy-safe exercise plan for a Thai woman, age 40.
 - Labels used per exercise: Purpose (why), Setup (start and position), Movement (path and tempo), Breathe (cues), Avoid (warnings), Alternatives and Modifications (including trimester‑specific notes).
 
 ## Circuit Formatting Rules (Required)
-- Name circuits like “Circuit A (Do all) — three rounds”.
+- Name circuits like “Circuit A — three rounds”.
 - Under each circuit, list exercises with their prescriptions and details.
 - If a “Pick one” choice is intended, mark the block header “Pick one” and provide two to three options.
 
@@ -90,8 +90,8 @@ Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (
 - Print‑friendly: avoid dark backgrounds; ensure text legibility and minimal ink.
 
 ## HTML Structure (Guideline)
-- Use one section per week with clear headings.
-- Include gestational age and the calendar date range in each week header.
+- Use one section per week with clear, concise headings (for example, “สัปดาห์ที่ 10”).
+- If needed, include gestational age and calendar date range as data attributes or a subtle meta line, not in the H2.
 - Minimal example markup:
   - Week wrapper: <section class="week" data-week="N" data-gestational-age="18 weeks 0 days to 18 weeks 6 days">…</section>
   - Session block: <article class="session" data-session="1" data-focus="Strength">…</article>
