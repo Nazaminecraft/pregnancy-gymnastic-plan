@@ -37,6 +37,9 @@
       .meta { color: var(--muted); font-size: 0.92rem; }
       .block { background: #fafafa; border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin: 10px 0; }
       .block h4 { margin: 0 0 8px; font-size: 1rem; color: var(--accent); }
+      .spec { display: grid; grid-template-columns: 140px 1fr; gap: 6px 12px; padding: 10px; margin: 6px 0 10px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+      .spec .k { color: var(--muted); }
+      .ex-name { margin: 0 0 6px; font-weight: 600; }
       ul { margin: 0; padding-left: 20px; }
       li { margin: 10px 0; line-height: 1.6; }
       a { color: var(--accent); text-decoration: none; }
@@ -185,54 +188,162 @@
           <h3>เซสชันที่ 1 — เวท A (เน้นส่วนล่าง) — 35 ถึง 40 นาที — ระดับความหนักที่รับรู้ 4 ถึง 6</h3>
           <div class="meta">อุปกรณ์: ดัมบเบล ยางยืด เสื่อโยคะ • ทางเลือก: ใช้น้ำหนักตัวทั้งหมด</div>
           <div class="block">
-            <h4>Warm‑up (Do all) — 6 to 8 minutes</h4>
+            <h4>อบอุ่นร่างกาย (ทำทั้งหมด) — 6 ถึง 8 นาที</h4>
             <ul>
-              <li id="ex-cat-cow">Cat‑Cow × 6 ถึง 8 รอบ — <a href="https://www.youtube.com/watch?v=9uY-vvV4Lgc" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> เพิ่มความคล่องตัวของกระดูกสันหลังและสบายหลัง.<br/><span class="dim">การเตรียมท่า:</span> มืออยู่ใต้ไหล่ เข่าอยู่ใต้สะโพก.<br/><span class="dim">การเคลื่อนไหว:</span> หายใจเข้าโค้งหลัง (cow) หายใจออกโค้งหลังส่วนบน (cat) ช้าๆ ควบคุม.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> ฝืนช่วงการเคลื่อนไหวหรือเกร็งคอ.
-                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-cat-cow">Cat‑Cow</a></div>
+              <li id="ex-cat-cow">
+                <h5 class="ex-name">Cat‑Cow</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>6 ถึง 8 รอบ</div>
+                  <div class="k">ความหนัก</div><div>เบามาก</div>
+                  <div class="k">พัก</div><div>—</div>
+                  <div class="k">อุปกรณ์</div><div>เสื่อโยคะ</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-cat-cow">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> เพิ่มความคล่องตัวของกระดูกสันหลัง ลดตึงหลัง และช่วยการรับรู้การหายใจ.<br/>
+                <span class="dim">การเตรียมท่า:</span> ตั้งท่าสี่ขา มืออยู่ใต้ไหล่ เข่าอยู่ใต้สะโพก หลังเป็นกลาง คอผ่อนคลาย.<br/>
+                <span class="dim">การเคลื่อนไหว:</span> หายใจเข้า แอ่นหลังเล็กน้อย เปิดอก; หายใจออก โค้งหลังส่วนบน ดึงสะดือเบาๆ ทำช้าและนุ่มนวล.<br/>
+                <span class="dim">การหายใจ:</span> ประสานหายใจเข้า‑ออกกับการเคลื่อนไหว หายใจยาวสม่ำเสมอ.<br/>
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> ฝืนช่วงการเคลื่อนไหว เกร็งคอหรือไหล่ เจ็บปวดใดๆ ให้ลดระยะ.
               </li>
-              <li id="ex-9090">การหายใจ 90/90 จำนวน 2 × 5 ลมหายใจ — <a href="https://www.youtube.com/watch?v=QdkE6Tdgpvk" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> ใช้กะบังลมและควบคุมทรวงอก ประสานงานกับอุ้งเชิงกราน.<br/><span class="dim">การเตรียมท่า:</span> เอนหลังหรือพิงผนังให้สบาย.<br/><span class="dim">การเคลื่อนไหว:</span> หายใจเข้าขยายซี่โครง หายใจออกยาวนุ่มเพื่อลดซี่โครงลง.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> ยกไหล่หรือกลั้นหายใจ.
-                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-9090">การหายใจ 90/90</a></div>
+              <li id="ex-9090">
+                <h5 class="ex-name">การหายใจ 90/90</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>2 × 5 ลมหายใจ</div>
+                  <div class="k">ความหนัก</div><div>เบามาก</div>
+                  <div class="k">พัก</div><div>หายใจปกติระหว่างรอบ</div>
+                  <div class="k">อุปกรณ์</div><div>หมอน/ผนัง (ถ้าพิง)</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-9090">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> ฝึกใช้กะบังลม ควบคุมซี่โครง และประสานงานกับอุ้งเชิงกรานเพื่อเพิ่มเสถียรภาพแกนกลาง.<br/>
+                <span class="dim">การเตรียมท่า:</span> นอนหงายงอสะโพก‑เข่า 90 องศา วางเท้าบนผนังหรือเก้าอี้ หลังช่วงเอวเป็นกลาง ซี่โครงผ่อนลง.<br/>
+                <span class="dim">การเคลื่อนไหว:</span> หายใจเข้าขยายซี่โครงด้านข้าง‑ด้านหลัง; หายใจออกยาวนุ่ม รู้สึกซี่โครงลดลงและพื้นท้องราบ.<br/>
+                <span class="dim">การหายใจ:</span> จังหวะช้า ยาว และสม่ำเสมอ ไม่กลั้นหายใจ.<br/>
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> ยกไหล่ แอ่นหลัง หรือเกร็งหน้าท้องมากเกินไป.
               </li>
             </ul>
           </div>
           <div class="block">
             <h4>เมน — เซอร์กิต A (ทำทั้งหมด) — 3 รอบ • พัก 60 ถึง 90 วินาที</h4>
             <ul>
-              <li id="ex-goblet-box">กอบเลตสควอตแตะกล่อง — 3 × 8–10 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 75 วินาที — <a href="https://www.youtube.com/watch?v=YpmA85upPBs" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> เสริมกำลังขาส่วนล่างและรูปแบบนั่ง‑ลุก ระยะลึกคงที่.<br/><span class="dim">การเตรียมท่า:</span> เท้ากว้างสะโพก จับดัมบเบลชิดอก ตั้งกล่องให้พอดีสบาย.<br/><span class="dim">การเคลื่อนไหว:</span> ฮินจ์สะโพกและนั่งไปข้างหลังให้แตะกล่องเบาๆ ดันผ่านกลางเท้าเพื่อยืนตัวตรง.<br/><span class="dim">การหายใจ:</span> หายใจเข้าขณะลง หายใจออกขณะยืนขึ้น.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> เข้าหุบเข้าด้านใน กระแทกกล่อง กลั้นหายใจ <span class="dim">ทางเลือก/การปรับ:</span> สควอตแตะกล่องแบบน้ำหนักตัว; ยกความสูงกล่องเมื่อท้องโตขึ้น.
-                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-goblet-box">กอบเลตสควอตแตะกล่อง</a></div>
+              <li id="ex-goblet-box">
+                <h5 class="ex-name">กอบเลตสควอตแตะกล่อง</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>3 × 8–10 ครั้ง</div>
+                  <div class="k">ความหนัก</div><div>ระดับความหนักที่รับรู้ 5</div>
+                  <div class="k">พัก</div><div>75 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>ดัมบเบล, กล่อง</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-goblet-box">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> เสริมกำลังขาส่วนล่างและรูปแบบนั่ง‑ลุก ระยะลึกคงที่.<br/>
+                <span class="dim">การเตรียมท่า:</span> เท้ากว้างสะโพก จับดัมบเบลชิดอก ตั้งกล่องให้พอดีสบาย.<br/>
+                <span class="dim">การเคลื่อนไหว:</span> ฮินจ์สะโพกและนั่งไปข้างหลังให้แตะกล่องเบาๆ ดันผ่านกลางเท้าเพื่อยืนตัวตรง.<br/>
+                <span class="dim">การหายใจ:</span> หายใจเข้าขณะลง หายใจออกขณะยืนขึ้น.<br/>
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> เข้าหุบเข้าด้านใน กระแทกกล่อง กลั้นหายใจ <span class="dim">ทางเลือก/การปรับ:</span> สควอตแตะกล่องแบบน้ำหนักตัว; ยกความสูงกล่องเมื่อท้องโตขึ้น.
               </li>
-              <li id="ex-hip-hinge">ฮิปฮินจ์ด้วยดัมบเบล (ลักษณะโรมานียนเดดลิฟต์) — 3 × 8–10 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 75 วินาที — <a href="https://www.youtube.com/watch?v=Gs_c2PkdPJ4" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> เสริมกำลังหลังขาและก้น เพื่อพยุงท่าทางและลดอาการปวดหลัง.<br/><span class="dim">การเตรียมท่า:</span> เท้ากว้างสะโพก ถือดัมบเบลข้างลำตัว เข่างอเล็กน้อย ไหล่ผ่อนลง.<br/><span class="dim">การเคลื่อนไหว:</span> ดันสะโพกไปด้านหลังโดยหลังยาว ลดลงจนตึงหลังขา ยืนขึ้นด้วยแรงสะโพกไปข้างหน้า.<br/><span class="dim">การหายใจ:</span> หายใจเข้าขณะลดลง; ผ่อนลมหายใจช้าๆ ขณะยืนขึ้น.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> โค้งหลังล็อกเข่า ปล่อยดัมบเบลลอยห่างลำตัว <span class="dim">ทางเลือก/การปรับ:</span> ฮินจ์ด้วยมือที่สะโพก; ลดระยะเมื่อหลังตึง.
-                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-hip-hinge">ฮิปฮินจ์ด้วยดัมบเบล</a></div>
+              <li id="ex-hip-hinge">
+                <h5 class="ex-name">ฮิปฮินจ์ด้วยดัมบเบล (โรมานียนเดดลิฟต์)</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>3 × 8–10 ครั้ง</div>
+                  <div class="k">ความหนัก</div><div>ระดับความหนักที่รับรู้ 5</div>
+                  <div class="k">พัก</div><div>75 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>ดัมบเบล</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-hip-hinge">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> เสริมกำลังหลังขาและก้น เพื่อพยุงท่าทางและลดอาการปวดหลัง.<br/>
+                <span class="dim">การเตรียมท่า:</span> เท้ากว้างสะโพก ถือดัมบเบลข้างลำตัว เข่างอเล็กน้อย ไหล่ผ่อนลง.<br/>
+                <span class="dim">การเคลื่อนไหว:</span> ดันสะโพกไปด้านหลังโดยหลังยาว ลดลงจนตึงหลังขา ยืนขึ้นด้วยแรงสะโพกไปข้างหน้า.<br/>
+                <span class="dim">การหายใจ:</span> หายใจเข้าขณะลดลง; ผ่อนลมหายใจช้าๆ ขณะยืนขึ้น.<br/>
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> โค้งหลัง ล็อกเข่า ปล่อยดัมบเบลลอยห่างลำตัว <span class="dim">ทางเลือก/การปรับ:</span> ฮินจ์ด้วยมือที่สะโพก; ลดระยะเมื่อหลังตึง.
               </li>
-              <li id="ex-band-row">ดึงยางแรงต้าน (แถว) — 3 × 10–12 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 60 วินาที — <a href="https://www.youtube.com/watch?v=3oUPVvun6GM" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> เสริมกล้ามเนื้อหลังส่วนบนและท่าทาง ลดไหล่งุ้ม.<br/><span class="dim">การเตรียมท่า:</span> ยึดยางระดับอก ยืนหลังตรง ซี่โครงผ่อนลง คอเป็นกลาง.<br/><span class="dim">การเคลื่อนไหว:</span> ดึงศอกถอยหลังผ่านแนวซี่โครง ค้าง 1 วินาที ค่อยๆ คืนสู่จุดเริ่มต้น.<br/><span class="dim">การหายใจ:</span> หายใจออกตอนดึง; หายใจเข้าตอนคืน.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> ยกไหล่ กางซี่โครง เอนตัวมากเกินไป <span class="dim">ทางเลือก/การปรับ:</span> ดึงด้วยผ้าขนหนูพาดประตู; นั่งดึงเมื่อสมดุลไม่ดี.
-                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-band-row">ดึงยางแรงต้าน (แถว)</a></div>
+              <li id="ex-band-row">
+                <h5 class="ex-name">ดึงยางแรงต้าน (แถว)</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>3 × 10–12 ครั้ง</div>
+                  <div class="k">ความหนัก</div><div>ระดับความหนักที่รับรู้ 5</div>
+                  <div class="k">พัก</div><div>60 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>ยางยืดแรงต้าน</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-band-row">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> เสริมกล้ามเนื้อหลังส่วนบนและท่าทาง ลดไหล่งุ้ม.<br/>
+                <span class="dim">การเตรียมท่า:</span> ยึดยางระดับอก ยืนหลังตรง ซี่โครงผ่อนลง คอเป็นกลาง.<br/>
+                <span class="dim">การเคลื่อนไหว:</span> ดึงศอกถอยหลังผ่านแนวซี่โครง ค้าง 1 วินาที ค่อยๆ คืนสู่จุดเริ่มต้น.<br/>
+                <span class="dim">การหายใจ:</span> หายใจออกตอนดึง; หายใจเข้าตอนคืน.<br/>
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> ยกไหล่ กางซี่โครง เอนตัวมากเกินไป <span class="dim">ทางเลือก/การปรับ:</span> ดึงด้วยผ้าขนหนูพาดประตู; นั่งดึงเมื่อสมดุลไม่ดี.
               </li>
             </ul>
           </div>
           <div class="block">
             <h4>ฟินิชเชอร์ — แกนกลางและต้านการบิด (ทำทั้งหมด) — 2 รอบ • พัก 45 วินาที</h4>
             <ul>
-              <li id="ex-pallof">พาลอฟเพรส — 2 × 10 ต่อข้าง ที่ระดับความหนักที่รับรู้ 4 ถึง 5 — <a href="https://www.youtube.com/watch?v=GkxLBDryNLU" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> สร้างเสถียรภาพแกนกลางแบบต้านการบิด พร้อมการหายใจที่ดี.<br/><span class="dim">การเตรียมท่า:</span> ยืนด้านข้างต่อจุดยึดยาง เข่างอเล็กน้อย มือถือยางระดับอก.<br/><span class="dim">การเคลื่อนไหว:</span> หายใจออกพร้อมดันแขนไปข้างหน้า ค้าง 1–2 วินาที แล้วค่อยดึงกลับ.<br/><span class="dim">การหายใจ:</span> ผ่อนลมหายใจยาวขณะดัน แขน กลับหายใจเข้าเบาๆ.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> บิดลำตัว ยกไหล่ กลั้นหายใจ <span class="dim">ทางเลือก/การปรับ:</span> ค้างครึ่งคุกเข่า ใช้ยางอ่อนลง หรือยื่นแขนสั้นลง.
-                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-pallof">พาลอฟเพรส</a></div>
+              <li id="ex-pallof">
+                <h5 class="ex-name">พาลอฟเพรส</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>2 × 10 ต่อข้าง</div>
+                  <div class="k">ความหนัก</div><div>ระดับความหนักที่รับรู้ 4 ถึง 5</div>
+                  <div class="k">พัก</div><div>45 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>ยางยืดแรงต้าน</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-pallof">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> สร้างเสถียรภาพแกนกลางแบบต้านการบิด พร้อมการหายใจที่ดี.<br/>
+                <span class="dim">การเตรียมท่า:</span> ยืนด้านข้างต่อจุดยึดยาง เข่างอเล็กน้อย มือถือยางระดับอก.<br/>
+                <span class="dim">การเคลื่อนไหว:</span> หายใจออกพร้อมดันแขนไปข้างหน้า ค้าง 1–2 วินาที แล้วค่อยดึงกลับ.<br/>
+                <span class="dim">การหายใจ:</span> ผ่อนลมหายใจยาวขณะดัน แขน กลับหายใจเข้าเบาๆ.<br/>
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> บิดลำตัว ยกไหล่ กลั้นหายใจ <span class="dim">ทางเลือก/การปรับ:</span> ค้างครึ่งคุกเข่า ใช้ยางอ่อนลง หรือยื่นแขนสั้นลง.
               </li>
             </ul>
           </div>
           <div class="block">
             <h4>คูลดาวน์ (ทำทั้งหมด) — 4 ถึง 6 นาที</h4>
             <ul>
-              <li id="ex-thread">เธรดเดอะนีดิล 2 × 20–30 วินาที ต่อข้าง — <a href="https://www.youtube.com/watch?v=SFQ3F4SlwTo" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> หมุนเปิดช่วงอก ลดตึงหลังส่วนบน.<br/><span class="dim">การเตรียมท่า:</span> ตั้งสี่ขา หลังเป็นกลาง.<br/><span class="dim">การเคลื่อนไหว:</span> สอดแขนลอดใต้ลำตัว พักไหล่และศีรษะเบาๆ หายใจเข้าช่วงหลังส่วนบน แล้วสลับข้าง.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> ฝืนช่วงหรือบิดเอวล่าง.
-                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-thread">เธรดเดอะนีดิล</a></div>
+              <li id="ex-thread">
+                <h5 class="ex-name">เธรดเดอะนีดิล</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>2 × 20–30 วินาที ต่อข้าง</div>
+                  <div class="k">ความหนัก</div><div>เบา</div>
+                  <div class="k">พัก</div><div>15–30 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>เสื่อโยคะ/หมอนรองศีรษะ (ถ้าจำเป็น)</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-thread">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> เปิดช่วงอก คลายหลังส่วนบน และเพิ่มการหมุนของกระดูกสันหลังทรวงอกอย่างปลอดภัย.<br/>
+                <span class="dim">การเตรียมท่า:</span> ตั้งท่าสี่ขา หลังเป็นกลาง คอผ่อน ไหล่กว้างสบาย.<br/>
+                <span class="dim">การเคลื่อนไหว:</span> สอดแขนข้างหนึ่งลอดใต้ลำตัว วางไหล่‑ศีรษะเบาๆ หมุนเปิดหน้าอก หายใจลึกๆ แล้วสลับข้าง.<br/>
+                <span class="dim">การหายใจ:</span> หายใจช้า นุ่ม และสม่ำเสมอ เน้นหายใจเข้าด้านหลังซี่โครง.<br/>
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> บิดจากเอวล่างหรือฝืนช่วงจนรู้สึกเจ็บ.
               </li>
-              <li id="ex-calf-stretch">ยืดน่อง 2 × 20–30 วินาที ต่อข้าง — <a href="https://www.youtube.com/watch?v=CM1eioaIPcQ" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> เพิ่มความยืดหยุ่นข้อเท้าและน่อง เดินสบายขึ้น.<br/><span class="dim">การเตรียมท่า:</span> ก้าวเท้าหลังส้นติดพื้น ปลายเท้าชี้ตรง.<br/><span class="dim">การเคลื่อนไหว:</span> เอนตัวไปข้างหน้าจนตึงพอสมควร สะโพกหันตรง.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> เด้งยืดหรือเจ็บ ฝ่าเท้าล้มเข้า.
-                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-calf">ยืดน่อง</a></div>
+              <li id="ex-calf-stretch">
+                <h5 class="ex-name">ยืดน่อง</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>2 × 20–30 วินาที ต่อข้าง</div>
+                  <div class="k">ความหนัก</div><div>เบา</div>
+                  <div class="k">พัก</div><div>15–30 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>กำแพง/ขั้นบันได</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-calf">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> เพิ่มความยืดหยุ่นน่องและข้อเท้า ช่วยการเดินและลดตึงน่องหลังคาร์ดิโอ.<br/>
+                <span class="dim">การเตรียมท่า:</span> ก้าวเท้าหลังส้นติดพื้น ปลายเท้าชี้ตรง ลำตัวตั้ง.<br/>
+                <span class="dim">การเคลื่อนไหว:</span> เอนตัวไปข้างหน้าให้ตึงพอเหมาะ ค้าง หายใจช้า แล้วสลับข้าง.<br/>
+                <span class="dim">การหายใจ:</span> หายใจสม่ำเสมอ ผ่อนแรงตอนค้าง.<br/>
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> เด้งยืด ฝ่าเท้าล้มเข้า หรือรู้สึกเจ็บ.
               </li>
             </ul>
           </div>
           <div class="block">
             <h4>อุ้งเชิงกราน (ทำทั้งหมด) — 3 ถึง 4 นาที</h4>
             <ul>
-              <li id="ex-kegels">คีเกล: 2 × 6 ครั้ง — เกร็งเบา 6 ถึง 8 วินาที แล้วคลายเต็มที่ — <a href="https://www.youtube.com/watch?v=nBfbJ-3tUdc" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> เสริมแรงและการประสานงานของอุ้งเชิงกราน.<br/><span class="dim">การหายใจ:</span> หายใจเข้าเพื่อผ่อนคลาย หายใจออกพร้อมยก‑เกร็งเบาๆ ค้าง 6 ถึง 8 วินาที แล้วผ่อนคลายเต็มที่ระหว่างรอบ.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> เกร็งก้นหรือหน้าท้อง กลั้นหายใจ หรือเกร็งมากเกินไป.
-                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-kegels">คีเกล</a></div>
+              <li id="ex-kegels">
+                <h5 class="ex-name">คีเกล</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>2 × 6 ครั้ง (ค้าง 6–8 วินาที)</div>
+                  <div class="k">ความหนัก</div><div>เบา</div>
+                  <div class="k">พัก</div><div>คลายเต็มที่ 6–8 วินาทีระหว่างครั้ง</div>
+                  <div class="k">อุปกรณ์</div><div>—</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-kegels">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> เสริมแรง การรับรู้ และจังหวะผ่อน‑เกร็งของอุ้งเชิงกราน ช่วยสนับสนุนกระดูกสันหลังและการทรงตัว.<br/>
+                <span class="dim">การเตรียมท่า:</span> นั่งพิง นอนตะแคง หรือยืนหลังยาวผ่อนคลาย สบายหายใจได้คล่อง.<br/>
+                <span class="dim">การเคลื่อนไหว:</span> เกร็งเบาๆ เหมือนยกอุ้งเชิงกรานขึ้นด้านใน‑บน ค้าง 6–8 วินาที แล้วคลายเต็มที่ก่อนครั้งถัดไป.<br/>
+                <span class="dim">การหายใจ:</span> หายใจเข้าผ่อนคลาย หายใจออกขณะเกร็ง เบาสม่ำเสมอ ไม่กลั้นหายใจ.<br/>
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> เกร็งก้น หน้าท้อง หรือขาแทน เกร็งแรงเกินไป หรือรีบเกินไปจนไม่คลายเต็มที่.
               </li>
             </ul>
           </div>
@@ -244,8 +355,20 @@
           <div class="block">
             <h4>แผน (ทำทั้งหมด)</h4>
             <ul>
-              <li id="ex-treadmill-incline">เดินลู่วิ่งปรับความชัน 30 นาที ที่ระดับความหนักที่รับรู้ 4 ถึง 5; ความชัน 0–3% — <a href="https://www.youtube.com/watch?v=g6fHFipijKs" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> คาร์ดิโอแรงกระแทกต่ำ เพิ่มความทนทานก้น‑ขา.<br/><span class="dim">การเตรียมท่า:</span> ผูกเชือกรองเท้าให้แน่น ตั้งความชัน 0 ถึง 3% จับราวเบาๆ เท่าที่จำเป็น.<br/><span class="dim">การเคลื่อนไหว:</span> ก้าวสั้น หลังตั้งตรง ความเร็วคงที่ที่ยังพูดเป็นประโยคได้.<br/><span class="dim">การหายใจ:</span> หายใจทางจมูกหรือจมูก‑ปากสบายๆ จิบน้ำตามต้องการ.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> กำราวแน่น ก้าวยาวเกินไป หรือร้อนเกินไป.
-                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-treadmill">เดินลู่วิ่งปรับความชัน</a></div>
+              <li id="ex-treadmill-incline">
+                <h5 class="ex-name">เดินลู่วิ่งปรับความชัน</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>30 นาที</div>
+                  <div class="k">ความหนัก</div><div>ระดับความหนักที่รับรู้ 4 ถึง 5</div>
+                  <div class="k">พัก</div><div>—</div>
+                  <div class="k">อุปกรณ์</div><div>ลู่วิ่ง (ความชัน 0–3%)</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-treadmill">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> เพิ่มความทนทานระบบไหลเวียน โดยแรงกระแทกต่ำ และเสริมกำลังก้น‑ต้นขา.<br/>
+                <span class="dim">การเตรียมท่า:</span> ผูกเชือกรองเท้าให้แน่น ปรับความชัน 0–3% จับราวเฉพาะจำเป็น ท่าตั้งตรงสบาย.<br/>
+                <span class="dim">การเคลื่อนไหว:</span> ก้าวสั้นและสม่ำเสมอ หลังตั้งตรง ความเร็วที่ยังพูดเป็นประโยคได้ หากร้อนให้ลดความเร็วหรือพัก.
+                <span class="dim">การหายใจ:</span> หายใจทางจมูกหรือจมูก‑ปากสบายๆ จิบน้ำตามต้องการ.
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> กำราวแน่น ก้าวยาวเกินไป โน้มตัวมากเกิน หรือร้อนเกินไป.
               </li>
               <li>ทางเลือก: เร่งจังหวะ 4 รอบ รอบละ 30 วินาที (เร็วขึ้นเล็กน้อย) พักเดินเบา 90 วินาทีระหว่างรอบ</li>
             </ul>
@@ -253,17 +376,54 @@
           <div class="block">
             <h4>โมบิลิตี/ยืดเหยียด (ทำทั้งหมด) — 6 ถึง 8 นาที</h4>
             <ul>
-              <li>Cat‑Cow × 6 ถึง 8 รอบ — <a href="https://www.youtube.com/watch?v=9uY-vvV4Lgc" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> คลายสันหลังหลังคาร์ดิโอ.<br/><span class="dim">การเตรียมท่า:</span> มือใต้ไหล่ เข่าใต้สะโพก.<br/><span class="dim">การเคลื่อนไหว:</span> หายใจเข้า‑ออกช้าๆ โค้ง‑แอ่นอย่างนุ่มนวล.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> ฝืนช่วง.</li>
-                <br/><span class="dim">การเคลื่อนไหว:</span> ถ่ายน้ำหนักไปข้างหน้าเล็กน้อยจนรู้สึกตึงพอดี หายใจสบาย.
-                <br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> แอ่นหลังล่างหรือฝืนจนเจ็บ.
-                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-hipflexor">ยืดสะโพกด้านหน้าแบบครึ่งคุกเข่า</a></div>
+              <li>
+                <h5 class="ex-name">Cat‑Cow</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>6 ถึง 8 รอบ</div>
+                  <div class="k">ความหนัก</div><div>เบามาก</div>
+                  <div class="k">พัก</div><div>—</div>
+                  <div class="k">อุปกรณ์</div><div>เสื่อโยคะ</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-cat-cow">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> คลายสันหลังหลังคาร์ดิโอและรีเซ็ตจังหวะหายใจ.<br/>
+                <span class="dim">การเตรียมท่า:</span> มือใต้ไหล่ เข่าใต้สะโพก หลังเป็นกลาง.<br/>
+                <span class="dim">การเคลื่อนไหว:</span> หายใจเข้า‑ออกช้าๆ โค้ง‑แอ่นอย่างนุ่มนวล ควบคุมช่วงเคลื่อนไหว.<br/>
+                <span class="dim">การหายใจ:</span> หายใจยาวและสม่ำเสมอ ประสานกับการเคลื่อนไหว.<br/>
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> ฝืนช่วงหรือเจ็บ.
+              </li>
+              <li>
+                <h5 class="ex-name">ยืดสะโพกด้านหน้าแบบครึ่งคุกเข่า</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>2 × 20–30 วินาที ต่อข้าง</div>
+                  <div class="k">ความหนัก</div><div>เบา</div>
+                  <div class="k">พัก</div><div>15–30 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>เสื่อโยคะ/หมอนรองเข่า</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-hipflexor">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> คลายสะโพกด้านหน้า ลดตึงหลังล่างหลังคาร์ดิโอ.<br/>
+                <span class="dim">การเตรียมท่า:</span> คุกเข่าหนึ่งข้าง อีกข้างตั้งเท้าหน้า เข่าตรงข้อเท้า ลำตัวตั้งตรง.
+                <span class="dim">การเคลื่อนไหว:</span> ถ่ายน้ำหนักไปข้างหน้าเล็กน้อยจนรู้สึกตึงพอดี ค้าง หายใจสบาย แล้วสลับข้าง.<br/>
+                <span class="dim">การหายใจ:</span> หายใจสม่ำเสมอ ไม่กลั้นหายใจ.
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> แอ่นหลังล่างมากเกินไป หรือฝืนจนเจ็บ.
               </li>
             </ul>
           </div>
           <div class="block">
             <h4>อุ้งเชิงกราน (ทำทั้งหมด) — 3 ถึง 4 นาที</h4>
             <ul>
-              <li>คีเกล: 2 × 6 ครั้ง — <a href="https://www.youtube.com/watch?v=nBfbJ-3tUdc" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> ความทนทานและการประสานของอุ้งเชิงกราน.<br/><span class="dim">การหายใจ:</span> หายใจเข้าเพื่อผ่อนคลาย หายใจออกพร้อมยกเบาๆ คลายเต็มที่ระหว่างรอบ.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> เกร็งก้นหรือหน้าท้อง กลั้นหายใจ.</li>
+              <li>
+                <h5 class="ex-name">คีเกล</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>2 × 6 ครั้ง (ค้าง 6–8 วินาที)</div>
+                  <div class="k">ความหนัก</div><div>เบา</div>
+                  <div class="k">พัก</div><div>คลายเต็มที่ 6–8 วินาทีระหว่างครั้ง</div>
+                  <div class="k">อุปกรณ์</div><div>—</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-kegels">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> ความทนทานและการประสานของอุ้งเชิงกราน.<br/>
+                <span class="dim">การหายใจ:</span> หายใจเข้าเพื่อผ่อนคลาย หายใจออกพร้อมยกเบาๆ คลายเต็มที่ระหว่างรอบ.
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> เกร็งก้นหรือหน้าท้อง กลั้นหายใจ.
+              </li>
             </ul>
           </div>
         </article>
@@ -281,32 +441,106 @@
           <div class="block">
             <h4>เมน — เซอร์กิต A (ทำทั้งหมด) — 3 รอบ • พัก 60 ถึง 90 วินาที</h4>
             <ul>
-              <li id="ex-incline-press">ดัมบเบลเพรสบนม้านั่งปรับองศา — 3 × 8–10 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 75 วินาที — <a href="https://www.youtube.com/watch?v=c4hw0hEeMhg" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> พัฒนากำลังดัน โดยไม่ต้องนอนหงายนาน.<br/><span class="dim">การเตรียมท่า:</span> ม้านั่งเอียง 30–45°; ดัมบเบลระดับอก; เท้าติดพื้น.<br/><span class="dim">การเคลื่อนไหว:</span> ดันขึ้นเล็กโค้ง ควบคุมลงแตะเบาๆ.<br/><span class="dim">การหายใจ:</span> หายใจออกขณะดัน; หายใจเข้าขณะลดลง.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> แอ่นหลัง ศอกกาง กลั้นหายใจ <span class="dim">ทางเลือก/การปรับ:</span> ดันพื้นพิงกำแพง — <a href="https://www.youtube.com/watch?v=y07lRV94DY4" target="_blank" rel="noopener">วิดีโอ</a>; เพิ่มความเอียงเมื่อท้องโตขึ้น.
-                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-incline-press">ดัมบเบลเพรสบนม้านั่งปรับองศา</a></div>
+              <li id="ex-incline-press">
+                <h5 class="ex-name">ดัมบเบลเพรสบนม้านั่งปรับองศา</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>3 × 8–10 ครั้ง</div>
+                  <div class="k">ความหนัก</div><div>ระดับความหนักที่รับรู้ 5</div>
+                  <div class="k">พัก</div><div>75 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>ดัมบเบล, ม้านั่งปรับองศา</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-incline-press">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> พัฒนากำลังดัน โดยไม่ต้องนอนหงายนาน.<br/>
+                <span class="dim">การเตรียมท่า:</span> ม้านั่งเอียง 30–45° ดัมบเบลระดับอก เท้าติดพื้น.<br/>
+                <span class="dim">การเคลื่อนไหว:</span> ดันขึ้นเล็กโค้ง ควบคุมลงแตะเบาๆ หายใจออกตอนดัน.
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> แอ่นหลัง ศอกกาง กลั้นหายใจ.
               </li>
-              <li>ดึงยางแรงต้าน (แถว) — 3 × 10–12 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 60 วินาที — <a href="https://www.youtube.com/watch?v=3oUPVvun6GM" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> ควบคุมสะบักและปรับท่าทาง.<br/><span class="dim">การเตรียมท่า:</span> ยึดยางระดับอก หลังตั้ง ซี่โครงผ่อนลง.<br/><span class="dim">การเคลื่อนไหว:</span> ดึงเข้าหาซี่โครง ค้าง 1 วินาที คืนช้าๆ.<br/><span class="dim">การหายใจ:</span> หายใจออกตอนดึง; หายใจเข้าตอนคืน.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> ไหล่ยก คอยื่น <span class="dim">ทางเลือก/การปรับ:</span> นั่งดึง.</li>
-              <li>กอบเลตสควอตแตะกล่อง — 2 × 10 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 60 วินาที — <a href="https://www.youtube.com/watch?v=YpmA85upPBs" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> ตอกย้ำรูปแบบขาส่วนล่าง.<br/><span class="dim">การเตรียมท่า:</span> เท้ากว้างสะโพก ดัมบเบลชิดอก มีกล่องด้านหลัง.<br/><span class="dim">การเคลื่อนไหว:</span> ควบคุมลงแตะเบาๆ แล้วยืนตัวตรง.
-                <br/><span class="dim">Breathe:</span> inhale down; exhale to stand.
-                <br/><span class="dim">Avoid:</span> knees caving or rocking back. <span class="dim">Alternatives and Modifications:</span> body‑weight box squat; raise box height as pregnancy progresses.</li>
-              <li id="ex-side-plank">ไซด์แพลงก์ (งอเข่า) — 2 × 15–25 วินาที ต่อข้าง; พัก 30 วินาที — <a href="https://www.youtube.com/watch?v=JdL-XF7QI8g" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> ความมั่นคงแกนกลางด้านข้างและสะโพก.<br/><span class="dim">การเตรียมท่า:</span> ศอกใต้ไหล่ เข่าซ้อนกัน ลำตัวเส้นตรงศีรษะถึงเข่า.<br/><span class="dim">การเคลื่อนไหว:</span> ยกสะโพกค้าง หายใจสม่ำเสมอ สลับข้าง.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> ไหล่ทรุดหรือบิดลำตัว <span class="dim">ทางเลือก/การปรับ:</span> ยกสูง หรือ ลดเวลาค้าง.
-                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-side-plank">ไซด์แพลงก์</a></div>
+              <li>
+                <h5 class="ex-name">ดึงยางแรงต้าน (แถว)</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>3 × 10–12 ครั้ง</div>
+                  <div class="k">ความหนัก</div><div>ระดับความหนักที่รับรู้ 5</div>
+                  <div class="k">พัก</div><div>60 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>ยางยืดแรงต้าน</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-band-row">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> ควบคุมสะบักและปรับท่าทาง เสริมกล้ามหลังบน.<br/>
+                <span class="dim">การเตรียมท่า:</span> ยึดยางระดับอก หลังตั้ง ซี่โครงผ่อนลง.<br/>
+                <span class="dim">การเคลื่อนไหว:</span> ดึงเข้าหาซี่โครง ค้าง 1 วินาที คืนช้าๆ.
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> ไหล่ยก คอยื่น โยกตัว.
               </li>
-              <li>มอดิฟายด์เดดบัก — 2 × 6–8 ต่อข้าง; ช้า; พัก 30 วินาที — <a href="https://www.youtube.com/watch?v=HM0EcdXjF5s" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> ควบคุมแกนกลางร่วมกับการหายใจ ลดความเสี่ยงแยกของกล้ามท้องกลาง (ไดแอสทาซิส).
-                <br/><span class="dim">การเตรียมท่า:</span> นอนหงาย เข่า‑สะโพกงอ 90 องศา ซี่โครงผ่อนลง มือยกขึ้น.
-                <br/><span class="dim">การเคลื่อนไหว:</span> หายใจออกพร้อมเหยียดแขน‑ขาตรงข้าม ระยะเล็กควบคุม กลับขณะหายใจเข้า.
-                <br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> หน้าท้องนูน หลังแอ่น กลั้นหายใจ <span class="dim">ทางเลือก/การปรับ:</span> แตะส้นเท้า; ลดระยะคันโยกเมื่อมีอาการนูน.</li>
+              <li>
+                <h5 class="ex-name">กอบเลตสควอตแตะกล่อง</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>2 × 10 ครั้ง</div>
+                  <div class="k">ความหนัก</div><div>ระดับความหนักที่รับรู้ 5</div>
+                  <div class="k">พัก</div><div>60 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>ดัมบเบล, กล่อง</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-goblet-box">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> ตอกย้ำรูปแบบการนั่ง‑ลุก และเสริมกำลังขา.
+                <span class="dim">การเตรียมท่า:</span> เท้ากว้างสะโพก ดัมบเบลชิดอก มีกล่องด้านหลัง.
+                <span class="dim">การเคลื่อนไหว:</span> ควบคุมลงแตะเบาๆ แล้วยืนตัวตรง หายใจออกตอนยืน.
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> เข่าหุบ โยกตัวหลังแตะกล่อง.
+              </li>
+              <li id="ex-side-plank">
+                <h5 class="ex-name">ไซด์แพลงก์ (งอเข่า)</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>2 × 15–25 วินาที ต่อข้าง</div>
+                  <div class="k">ความหนัก</div><div>เบาถึงปานกลาง</div>
+                  <div class="k">พัก</div><div>30 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>เสื่อโยคะ</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-side-plank">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> ความมั่นคงแกนกลางด้านข้างและสะโพก.<br/>
+                <span class="dim">การเตรียมท่า:</span> ศอกใต้ไหล่ เข่าซ้อนกัน ลำตัวเส้นตรงศีรษะถึงเข่า.
+                <span class="dim">การเคลื่อนไหว:</span> ยกสะโพกค้าง หายใจสม่ำเสมอ สลับข้าง.
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> ไหล่ทรุด บิดลำตัว หรือกลั้นหายใจ.
+              </li>
+              <li>
+                <h5 class="ex-name">มอดิฟายด์เดดบัก</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>2 × 6–8 ต่อข้าง (ช้า)</div>
+                  <div class="k">ความหนัก</div><div>เบาถึงปานกลาง</div>
+                  <div class="k">พัก</div><div>30 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>เสื่อโยคะ</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-bird-dog">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> ควบคุมแกนกลางร่วมกับการหายใจ ลดความเสี่ยงการแยกของกล้ามท้องกลาง (ไดแอสทาซิส).<br/>
+                <span class="dim">การเตรียมท่า:</span> นอนหงาย เข่า‑สะโพกงอ 90 องศา ซี่โครงผ่อนลง มือยกขึ้น.
+                <span class="dim">การเคลื่อนไหว:</span> หายใจออกพร้อมเหยียดแขน‑ขาตรงข้าม ระยะเล็กควบคุม กลับขณะหายใจเข้า.
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> หน้าท้องนูน หลังแอ่น กลั้นหายใจ — ปรับด้วยแตะส้นเท้า/ลดระยะคันโยกเมื่อมีอาการนูน.
+              </li>
             </ul>
           </div>
           <div class="block">
-            <h4>Cool‑down (Do all) — 4 to 6 minutes</h4>
+            <h4>คูลดาวน์ (ทำทั้งหมด) — 4 ถึง 6 นาที</h4>
             <ul>
-              <li>เธรดเดอะนีดิล 2 × 20–30 วินาที ต่อข้าง — <a href="https://www.youtube.com/watch?v=SFQ3F4SlwTo" target="_blank" rel="noopener">วิดีโอ</a></li>
+              <li>
+                <h5 class="ex-name">เธรดเดอะนีดิล</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>2 × 20–30 วินาที ต่อข้าง</div>
+                  <div class="k">ความหนัก</div><div>เบา</div>
+                  <div class="k">พัก</div><div>15–30 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>เสื่อโยคะ/หมอนรองศีรษะ (ถ้าจำเป็น)</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-thread">ดูวิดีโอ (3)</a></div>
+                </div>
+              </li>
             </ul>
           </div>
           <div class="block">
-            <h4>Pelvic Floor (Do all) — 3 to 4 minutes</h4>
+            <h4>อุ้งเชิงกราน (ทำทั้งหมด) — 3 ถึง 4 นาที</h4>
             <ul>
-              <li>คีเกล: 2 × 6 ครั้ง — <a href="https://www.youtube.com/watch?v=nBfbJ-3tUdc" target="_blank" rel="noopener">วิดีโอ</a></li>
+              <li>
+                <h5 class="ex-name">คีเกล</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>2 × 6 ครั้ง (ค้าง 6–8 วินาที)</div>
+                  <div class="k">ความหนัก</div><div>เบา</div>
+                  <div class="k">พัก</div><div>คลายเต็มที่ 6–8 วินาทีระหว่างครั้ง</div>
+                  <div class="k">อุปกรณ์</div><div>—</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-kegels">ดูวิดีโอ (3)</a></div>
+                </div>
+              </li>
             </ul>
           </div>
         </article>
@@ -322,22 +556,75 @@
           <div class="block">
             <h4>เมน — เซอร์กิต A (ทำทั้งหมด) — 3 รอบ • พัก 60 ถึง 90 วินาที</h4>
             <ul>
-              <li>กอบเลตสควอตแตะกล่อง — 3–4 × 8–10 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 75 วินาที — <a href="https://www.youtube.com/watch?v=YpmA85upPBs" target="_blank" rel="noopener">วิดีโอ</a></li>
-              <li>ฮิปฮินจ์ด้วยดัมบเบล (โรมานียนเดดลิฟต์) — 3 × 8–10 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 75 วินาที — <a href="https://www.youtube.com/watch?v=Gs_c2PkdPJ4" target="_blank" rel="noopener">วิดีโอ</a></li>
-              <li>ดึงยางแรงต้าน (แถว) — 3 × 10–12 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 60 วินาที — <a href="https://www.youtube.com/watch?v=3oUPVvun6GM" target="_blank" rel="noopener">วิดีโอ</a></li>
-              <li id="ex-suitcase">ซูตเคสแครรี — 2 × 20–30 เมตร ต่อข้าง; พัก 45 วินาที — <a href="https://www.youtube.com/watch?v=DBaG6nhdI_w" target="_blank" rel="noopener">วิดีโอ</a> <span class="vid-links">ดูวิดีโอ (3): <a href="#vid-suitcase">ซูตเคสแครรี</a></span></li>
+              <li>
+                <h5 class="ex-name">กอบเลตสควอตแตะกล่อง</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>3–4 × 8–10 ครั้ง</div>
+                  <div class="k">ความหนัก</div><div>ระดับความหนักที่รับรู้ 5</div>
+                  <div class="k">พัก</div><div>75 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>ดัมบเบล, กล่อง</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-goblet-box">ดูวิดีโอ (3)</a></div>
+                </div>
+              </li>
+              <li>
+                <h5 class="ex-name">ฮิปฮินจ์ด้วยดัมบเบล (โรมานียนเดดลิฟต์)</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>3 × 8–10 ครั้ง</div>
+                  <div class="k">ความหนัก</div><div>ระดับความหนักที่รับรู้ 5</div>
+                  <div class="k">พัก</div><div>75 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>ดัมบเบล</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-hip-hinge">ดูวิดีโอ (3)</a></div>
+                </div>
+              </li>
+              <li>
+                <h5 class="ex-name">ดึงยางแรงต้าน (แถว)</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>3 × 10–12 ครั้ง</div>
+                  <div class="k">ความหนัก</div><div>ระดับความหนักที่รับรู้ 5</div>
+                  <div class="k">พัก</div><div>60 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>ยางยืดแรงต้าน</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-band-row">ดูวิดีโอ (3)</a></div>
+                </div>
+              </li>
+              <li>
+                <h5 class="ex-name">ซูตเคสแครรี</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>2 × 20–30 เมตร ต่อข้าง</div>
+                  <div class="k">พัก</div><div>45 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>ดัมบเบล</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-suitcase">ดูวิดีโอ (3)</a></div>
+                </div>
+              </li>
             </ul>
           </div>
           <div class="block">
-            <h4>Cool‑down (Do all) — 4 to 6 minutes</h4>
+            <h4>คูลดาวน์ (ทำทั้งหมด) — 4 ถึง 6 นาที</h4>
             <ul>
-              <li>เธรดเดอะนีดิล 2 × 20–30 วินาที ต่อข้าง — <a href="https://www.youtube.com/watch?v=SFQ3F4SlwTo" target="_blank" rel="noopener">วิดีโอ</a></li>
+              <li>
+                <h5 class="ex-name">เธรดเดอะนีดิล</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>2 × 20–30 วินาที ต่อข้าง</div>
+                  <div class="k">ความหนัก</div><div>เบา</div>
+                  <div class="k">พัก</div><div>15–30 วินาที</div>
+                  <div class="k">อุปกรณ์</div><div>เสื่อโยคะ/หมอนรองศีรษะ (ถ้าจำเป็น)</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-thread">ดูวิดีโอ (3)</a></div>
+                </div>
+              </li>
             </ul>
           </div>
           <div class="block">
-            <h4>Pelvic Floor (Do all) — 3 to 4 minutes</h4>
+            <h4>อุ้งเชิงกราน (ทำทั้งหมด) — 3 ถึง 4 นาที</h4>
             <ul>
-              <li>คีเกล: 2 × 6 ครั้ง — <a href="https://www.youtube.com/watch?v=nBfbJ-3tUdc" target="_blank" rel="noopener">วิดีโอ</a></li>
+              <li>
+                <h5 class="ex-name">คีเกล</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>2 × 6 ครั้ง (ค้าง 6–8 วินาที)</div>
+                  <div class="k">ความหนัก</div><div>เบา</div>
+                  <div class="k">พัก</div><div>คลายเต็มที่ 6–8 วินาทีระหว่างครั้ง</div>
+                  <div class="k">อุปกรณ์</div><div>—</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-kegels">ดูวิดีโอ (3)</a></div>
+                </div>
+              </li>
             </ul>
           </div>
         </article>
@@ -347,16 +634,25 @@
           <div class="block">
             <h4>แผน (ทำทั้งหมด)</h4>
             <ul>
-              <li id="ex-bike">ปั่น 30 ถึง 35 นาที ที่ระดับความหนักที่รับรู้ 4 ถึง 5 — <a href="https://www.youtube.com/watch?v=vl95BKnIGIY" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> แอโรบิกแรงกระแทกต่ำ.<br/><span class="dim">การเตรียมท่า:</span> ปรับอานให้เข่าเหยียดเกือบสุดตอนกดสุดรอบ จับแฮนด์หลวมๆ.
-                <br/><span class="dim">การเคลื่อนไหว:</span> จังหวะราบรื่น ต้านทานเบาถึงปานกลาง รักษาท่าทางดี.
-                <br/><span class="dim">การหายใจ:</span> หายใจเป็นจังหวะสบาย จิบน้ำเป็นระยะ.
-                <br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> หนักเกินไปจนบดรอบขา เข้าหุบเข้าด้านใน.
-                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-bike">จักรยานอยู่กับที่</a></div>
+              <li id="ex-bike">
+                <h5 class="ex-name">จักรยานอยู่กับที่</h5>
+                <div class="spec">
+                  <div class="k">จำนวน/เวลา</div><div>30 ถึง 35 นาที</div>
+                  <div class="k">ความหนัก</div><div>ระดับความหนักที่รับรู้ 4 ถึง 5</div>
+                  <div class="k">พัก</div><div>—</div>
+                  <div class="k">อุปกรณ์</div><div>จักรยานอยู่กับที่</div>
+                  <div class="k">วิดีโอ</div><div><a href="#vid-bike">ดูวิดีโอ (3)</a></div>
+                </div>
+                <span class="dim">วัตถุประสงค์:</span> แอโรบิกแรงกระแทกต่ำ เพิ่มความทนทานระบบไหลเวียน.
+                <span class="dim">การเตรียมท่า:</span> ปรับอานให้เข่าเหยียดเกือบสุดตอนกดสุดรอบ จับแฮนด์หลวมๆ.
+                <span class="dim">การเคลื่อนไหว:</span> จังหวะราบรื่น ต้านทานเบาถึงปานกลาง รักษาท่าทางดี.
+                <span class="dim">การหายใจ:</span> หายใจเป็นจังหวะสบาย จิบน้ำเป็นระยะ.
+                <span class="dim">ข้อควรหลีกเลี่ยง:</span> หนักเกินไปจนบดรอบขา เข่าหุบเข้าด้านใน.
               </li>
               <li>ทางเลือก: เร่งเบาๆ 6 รอบ รอบละ 45 วินาที พักง่าย 75 ถึง 90 วินาที</li>
             </ul>
           </div>
-          <div class="block"><h4>Pelvic Floor (Do all) — 3 to 4 minutes</h4><ul><li>Kegels: 2 × 6 repetitions — <a href="https://www.youtube.com/watch?v=nBfbJ-3tUdc" target="_blank" rel="noopener">video</a></li></ul></div>
+          <div class="block"><h4>อุ้งเชิงกราน (ทำทั้งหมด) — 3 ถึง 4 นาที</h4><ul><li><span class="ex-name">คีเกล</span> — 2 × 6 ครั้ง (ค้าง 6–8 วินาที) — <a href="#vid-kegels">ดูวิดีโอ</a></li></ul></div>
         </article>
 
         <article class="session" data-session="3" data-focus="Strength or Mobility">
@@ -364,11 +660,65 @@
           <div class="block">
             <h4>เลือกอย่างใดอย่างหนึ่ง</h4>
             <ul>
-              <li><strong>ตัวเลือก A — เวท B (เน้นส่วนบน)</strong><br/>
-                ดัมบเบลเพรสบนม้านั่งปรับองศา — 3 × 8–10 ครั้ง ที่ระดับความหนักที่รับรู้ 5 — <a href="https://www.youtube.com/watch?v=c4hw0hEeMhg" target="_blank" rel="noopener">วิดีโอ</a><br/>
-                ดึงยางแรงต้าน (แถว) — 3 × 10–12 ครั้ง ที่ระดับความหนักที่รับรู้ 5 — <a href="https://www.youtube.com/watch?v=3oUPVvun6GM" target="_blank" rel="noopener">วิดีโอ</a><br/>
-                สปริทสควอตแบบมีพยุง — 3 × 8 ต่อข้าง ที่ระดับความหนักที่รับรู้ 5 — <a href="https://www.youtube.com/watch?v=OfA1Pbm3Q0w" target="_blank" rel="noopener">วิดีโอ</a><br/>
-                พาลอฟเพรส — 2 × 10 ต่อข้าง ที่ระดับความหนักที่รับรู้ 4 ถึง 5 — <a href="https://www.youtube.com/watch?v=GkxLBDryNLU" target="_blank" rel="noopener">วิดีโอ</a>
+              <li><strong>ตัวเลือก A — เวท B (เน้นส่วนบน)</strong>
+                <ul>
+                  <li>
+                    <h5 class="ex-name">ดัมบเบลเพรสบนม้านั่งปรับองศา</h5>
+                    <div class="spec">
+                      <div class="k">จำนวน/เวลา</div><div>3 × 8–10 ครั้ง</div>
+                      <div class="k">ความหนัก</div><div>ระดับความหนักที่รับรู้ 5</div>
+                      <div class="k">พัก</div><div>75 วินาที</div>
+                      <div class="k">อุปกรณ์</div><div>ดัมบเบล, ม้านั่งปรับองศา</div>
+                      <div class="k">วิดีโอ</div><div><a href="#vid-incline-press">ดูวิดีโอ (3)</a></div>
+                    </div>
+                    <span class="dim">วัตถุประสงค์:</span> พัฒนากำลังดันส่วนบน โดยหลีกเลี่ยงการนอนหงายนาน.<br/>
+                    <span class="dim">การเตรียมท่า:</span> ม้านั่งเอียง 30–45° ดัมบเบลระดับอก เท้าติดพื้น หลังยาวสบาย.<br/>
+                    <span class="dim">การเคลื่อนไหว:</span> ดันขึ้นเล็กโค้ง ควบคุมลดลงแตะเบาๆ หายใจออกตอนดัน.
+                    <span class="dim">ข้อควรหลีกเลี่ยง:</span> แอ่นหลังมาก ศอกกาง กลั้นหายใจ.
+                  </li>
+                  <li>
+                    <h5 class="ex-name">ดึงยางแรงต้าน (แถว)</h5>
+                    <div class="spec">
+                      <div class="k">จำนวน/เวลา</div><div>3 × 10–12 ครั้ง</div>
+                      <div class="k">ความหนัก</div><div>ระดับความหนักที่รับรู้ 5</div>
+                      <div class="k">พัก</div><div>60 วินาที</div>
+                      <div class="k">อุปกรณ์</div><div>ยางยืดแรงต้าน</div>
+                      <div class="k">วิดีโอ</div><div><a href="#vid-band-row">ดูวิดีโอ (3)</a></div>
+                    </div>
+                    <span class="dim">วัตถุประสงค์:</span> เสริมกล้ามหลังบนและควบคุมสะบัก ช่วยปรับท่าทาง.<br/>
+                    <span class="dim">การเตรียมท่า:</span> ยึดยางระดับอก หลังตั้ง ซี่โครงผ่อนลง.
+                    <span class="dim">การเคลื่อนไหว:</span> ดึงเข้าหาซี่โครง ค้างสั้นๆ แล้วคืนช้าๆ.
+                    <span class="dim">ข้อควรหลีกเลี่ยง:</span> ไหล่ยก คอยื่น โยกตัว.
+                  </li>
+                  <li>
+                    <h5 class="ex-name">สปริทสควอตแบบมีพยุง</h5>
+                    <div class="spec">
+                      <div class="k">จำนวน/เวลา</div><div>3 × 8 ต่อข้าง</div>
+                      <div class="k">ความหนัก</div><div>ระดับความหนักที่รับรู้ 5</div>
+                      <div class="k">พัก</div><div>60–75 วินาที</div>
+                      <div class="k">อุปกรณ์</div><div>เก้าอี้/กำแพงสำหรับพยุง</div>
+                      <div class="k">วิดีโอ</div><div><a href="#vid-split-squat">ดูวิดีโอ (3)</a></div>
+                    </div>
+                    <span class="dim">วัตถุประสงค์:</span> เสริมกำลังขา‑สะโพกและการทรงตัว.
+                    <span class="dim">การเตรียมท่า:</span> ก้าวแยกเท้า กำแพง/เก้าอี้ช่วยพยุง ลำตัวตั้งตรง.
+                    <span class="dim">การเคลื่อนไหว:</span> ย่อลงจนตึงพอดี ดันผ่านกลางเท้าหน้าให้ยืนตรง.
+                    <span class="dim">ข้อควรหลีกเลี่ยง:</span> เข้มหุบ‑เข่าเลยปลายเท้ามาก โยกตัว.
+                  </li>
+                  <li>
+                    <h5 class="ex-name">พาลอฟเพรส</h5>
+                    <div class="spec">
+                      <div class="k">จำนวน/เวลา</div><div>2 × 10 ต่อข้าง</div>
+                      <div class="k">ความหนัก</div><div>ระดับความหนักที่รับรู้ 4 ถึง 5</div>
+                      <div class="k">พัก</div><div>45–60 วินาที</div>
+                      <div class="k">อุปกรณ์</div><div>ยางยืดแรงต้าน/สายเคเบิล</div>
+                      <div class="k">วิดีโอ</div><div><a href="#vid-pallof">ดูวิดีโอ (3)</a></div>
+                    </div>
+                    <span class="dim">วัตถุประสงค์:</span> สร้างความมั่นคงแกนกลางต้านการหมุน.
+                    <span class="dim">การเตรียมท่า:</span> ยืนข้างจุดยึดสาย ยืดสายตึงเล็กน้อย ซี่โครงผ่อนลง.
+                    <span class="dim">การเคลื่อนไหว:</span> ดันแขนออก‑ค้างสั้นๆ รักษาลำตัวนิ่ง แล้วดึงกลับ.
+                    <span class="dim">ข้อควรหลีกเลี่ยง:</span> บิดลำตัว ไหล่ยก กลั้นหายใจ.
+                  </li>
+                </ul>
               </li>
               <li><strong>ตัวเลือก B — โมบิลิตีและแกนกลาง</strong><br/>
                 Cat‑Cow × 8 — <a href="#vid-cat-cow">ดูวิดีโอ</a> • เธรดเดอะนีดิล 2 × 20–30 วินาที ต่อข้าง — <a href="#vid-thread">ดูวิดีโอ</a> • เบิร์ดด็อก 2 × 8 ต่อข้าง — <a href="#vid-bird-dog">ดูวิดีโอ</a> • ไซด์แพลงก์ (งอเข่า) 2 × 20–25 วินาที ต่อข้าง — <a href="#vid-side-plank">ดูวิดีโอ</a>

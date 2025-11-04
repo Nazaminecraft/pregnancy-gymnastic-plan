@@ -72,6 +72,11 @@ For every exercise listed under Main Work, include:
 - Three YouTube tutorial links per exercise (prefer prenatal‑appropriate, Thai when possible) listed in the Video Library section.
 Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (adjust steps as appropriate).
 
+## Presentation (Required)
+- For each exercise, render a compact “spec table” first, then follow with descriptive text blocks. Do not mix parameters inline with prose.
+- Spec table rows to include when applicable: จำนวน/เวลา, ความหนัก (Rate of Perceived Exertion), พัก, อุปกรณ์, ทางเลือก/การปรับ, วิดีโอ (link to Video Library anchor).
+- Separate descriptive blocks: วัตถุประสงค์, การเตรียมท่า, การเคลื่อนไหว, การหายใจ, ข้อควรหลีกเลี่ยง.
+
 ## Cardio Block Details (Required)
 - Mode (treadmill/bike/pool/walk) and structure (steady, intervals, tempo).
 - Parameters: time/distance, Rate of Perceived Exertion, and rest (if intervals); include incline or cadence if relevant.
