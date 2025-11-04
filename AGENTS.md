@@ -33,6 +33,9 @@ Pregnancy-safe exercise plan for a Thai woman, age 40.
 - Gestational Age anchor: use 25 August 2025 as 0 weeks 0 days; compute gestational age from this anchor only.
 -. No abbreviations: write terms in full (for example, use Gestational Age not GA, Rate of Perceived Exertion not RPE, minutes not min, seconds not s, repetitions not reps, dumbbell not DB). Spell month and day names in full.
 - Scope: do not add or modify files beyond `AGENTS.md` without explicit request from the project owner.
+ - Language: write all plan content in Thai. Use full words (no abbreviations). If a technical English term improves clarity, place the full English term in parentheses after the Thai term at the first mention only.
+ - Videos: prefer high‑quality Thai videos when available; otherwise English videos are acceptable.
+ - No abbreviations: write terms in full (for example, use “อายุครรภ์” not “GA”, “ระดับความหนักที่รับรู้” not “RPE”, “นาที” not “min”, “วินาที” not “s”, “ครั้ง” not “reps”, “ดัมบเบล” not “DB”). Spell month and day names in full when writing dates in Thai.
 
 ## Three‑Session Weeks (Required)
 - Group sessions by Week N. Show the gestational age range for the week (for example, 18 weeks 0 days to 18 weeks 6 days) and the calendar date range if helpful.
