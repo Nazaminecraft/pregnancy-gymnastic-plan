@@ -42,10 +42,6 @@
       a { color: var(--accent); text-decoration: none; }
       a:hover { text-decoration: underline; }
       code { background: #f3f4f6; border: 1px solid var(--line); border-radius: 6px; padding: 0 6px; }
-      .embed-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; margin-top: 8px; }
-      .embed { aspect-ratio: 16 / 9; background: #000; border-radius: 8px; overflow: hidden; }
-      .embed iframe { width: 100%; height: 100%; border: 0; }
-      details summary { cursor: pointer; color: var(--accent); }
       .vid-links { color: var(--muted); font-size: 0.9rem; margin-top: 6px; }
       .footer { color: var(--muted); font-size: 0.92rem; margin-top: 24px; }
       .ok { color: var(--ok); }
@@ -88,6 +84,97 @@
             <li><strong>ป้ายกำกับที่ใช้</strong>: วัตถุประสงค์ • การเตรียมท่า • การเคลื่อนไหว (และจังหวะ) • การหายใจ • ข้อควรหลีกเลี่ยง • ทางเลือก/การปรับ</li>
           </ul>
         </div>
+  </section>
+
+      <!-- Video Library -->
+      <section class="week" aria-labelledby="videos">
+        <h2 id="videos">วิดีโอแนะนำ (รวมลิงก์ต่อท่า)</h2>
+        <p class="subtle">ด้านล่างนี้คือวิดีโอ 3 ลิงก์สำหรับแต่ละท่า เพื่อหลีกเลี่ยงความซ้ำซ้อนในตัวเนื้อหา เราเชื่อมโยงจากท่าไปยังส่วนนี้</p>
+        <article class="video-group" id="vid-cat-cow"><h3>Cat‑Cow</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=vspCu9qBh14">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=D2PAtLj_R1A">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=vdlUQuZig_I">วิดีโอ 3</a></li>
+        </ul></article>
+        <article class="video-group" id="vid-9090"><h3>การหายใจ 90/90</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=c50AliUu4M0">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Av1ABWLFwBM">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=0kKUr8jagro">วิดีโอ 3</a></li>
+        </ul></article>
+        <article class="video-group" id="vid-goblet-box"><h3>กอบเลตสควอตแตะกล่อง</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=_d0CRfK1_Rs">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=r4o_VI3zJ9M">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=SbRJOP3JASI">วิดีโอ 3</a></li>
+        </ul></article>
+        <article class="video-group" id="vid-hip-hinge"><h3>ฮิปฮินจ์ด้วยดัมบเบล</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=RbJUGaOENS0">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=_tNKM2dj4so">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=vdlUQuZig_I">วิดีโอ 3</a></li>
+        </ul></article>
+        <article class="video-group" id="vid-band-row"><h3>ดึงยางแรงต้าน (แถว)</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=GI_VEpenEmM">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=u7YubzfIcTs">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=v0sI0Ma2l_A">วิดีโอ 3</a></li>
+        </ul></article>
+        <article class="video-group" id="vid-pallof"><h3>พาลอฟเพรส</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=VuqQ_LxMkCQ">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=iu3hl9dOxJ8">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Di2qXAyTAak">วิดีโอ 3</a></li>
+        </ul></article>
+        <article class="video-group" id="vid-thread"><h3>เธรดเดอะนีดิล</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=7TxEfUmSXbw">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=8UIdpNwaJOc">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=rqbS9x2alhI">วิดีโอ 3</a></li>
+        </ul></article>
+        <article class="video-group" id="vid-calf"><h3>ยืดน่อง</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=ZwY6wa22SMs">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=vdlUQuZig_I">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=RbJUGaOENS0">วิดีโอ 3</a></li>
+        </ul></article>
+        <article class="video-group" id="vid-kegels"><h3>คีเกล</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=5Z_B9tyuZWk">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=_tNKM2dj4so">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=vdlUQuZig_I">วิดีโอ 3</a></li>
+        </ul></article>
+        <article class="video-group" id="vid-treadmill"><h3>เดินลู่วิ่งปรับความชัน</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=kWiwPMeVE9Y">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=L3q9GRBNt5Y">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Olvz4XGtgws">วิดีโอ 3</a></li>
+        </ul></article>
+        <article class="video-group" id="vid-hipflexor"><h3>ยืดสะโพกด้านหน้าแบบครึ่งคุกเข่า</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=BFefBxBNVcM">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=RbJUGaOENS0">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=vdlUQuZig_I">วิดีโอ 3</a></li>
+        </ul></article>
+        <article class="video-group" id="vid-bike"><h3>จักรยานอยู่กับที่</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=oFHG8qoA4eU">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=ZkFHa9BCPvA">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=HBAB-I6Hous">วิดีโอ 3</a></li>
+        </ul></article>
+        <article class="video-group" id="vid-incline-press"><h3>ดัมบเบลเพรสบนม้านั่งปรับองศา</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=FzBr6Uqj4xg">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Mbdgo2MmMKc">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=z6sz2ZiGkxI">วิดีโอ 3</a></li>
+        </ul></article>
+        <article class="video-group" id="vid-split-squat"><h3>สปริทสควอตแบบมีพยุง</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=_tNKM2dj4so">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Olvz4XGtgws">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=vdlUQuZig_I">วิดีโอ 3</a></li>
+        </ul></article>
+        <article class="video-group" id="vid-suitcase"><h3>ซูตเคสแครรี</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=ztIen7Voeqs">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Db3YZvI7Cuc">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=VcYgeNLkT-A">วิดีโอ 3</a></li>
+        </ul></article>
+        <article class="video-group" id="vid-bird-dog"><h3>เบิร์ดด็อก</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Uh6cUpwZeEo">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=UGs2hgjUar0">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=YooScnELGKY">วิดีโอ 3</a></li>
+        </ul></article>
+        <article class="video-group" id="vid-side-plank"><h3>ไซด์แพลงก์ (งอเข่า)</h3><ul>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=cXBVSUpxa3s">วิดีโอ 1</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=RbJUGaOENS0">วิดีโอ 2</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=bzxo4iS6IK0">วิดีโอ 3</a></li>
+        </ul></article>
       </section>
 
       <!-- Week 10: Three Sessions -->
@@ -101,22 +188,10 @@
             <h4>Warm‑up (Do all) — 6 to 8 minutes</h4>
             <ul>
               <li id="ex-cat-cow">Cat‑Cow × 6 ถึง 8 รอบ — <a href="https://www.youtube.com/watch?v=9uY-vvV4Lgc" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> เพิ่มความคล่องตัวของกระดูกสันหลังและสบายหลัง.<br/><span class="dim">การเตรียมท่า:</span> มืออยู่ใต้ไหล่ เข่าอยู่ใต้สะโพก.<br/><span class="dim">การเคลื่อนไหว:</span> หายใจเข้าโค้งหลัง (cow) หายใจออกโค้งหลังส่วนบน (cat) ช้าๆ ควบคุม.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> ฝืนช่วงการเคลื่อนไหวหรือเกร็งคอ.
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/vspCu9qBh14" title="Cat Cow 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/D2PAtLj_R1A" title="Cat Cow 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/vdlUQuZig_I" title="Cat Cow 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
+                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-cat-cow">Cat‑Cow</a></div>
               </li>
               <li id="ex-9090">การหายใจ 90/90 จำนวน 2 × 5 ลมหายใจ — <a href="https://www.youtube.com/watch?v=QdkE6Tdgpvk" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> ใช้กะบังลมและควบคุมทรวงอก ประสานงานกับอุ้งเชิงกราน.<br/><span class="dim">การเตรียมท่า:</span> เอนหลังหรือพิงผนังให้สบาย.<br/><span class="dim">การเคลื่อนไหว:</span> หายใจเข้าขยายซี่โครง หายใจออกยาวนุ่มเพื่อลดซี่โครงลง.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> ยกไหล่หรือกลั้นหายใจ.
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/c50AliUu4M0" title="90/90 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/Av1ABWLFwBM" title="90/90 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/0kKUr8jagro" title="90/90 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
+                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-9090">การหายใจ 90/90</a></div>
               </li>
             </ul>
           </div>
@@ -124,31 +199,13 @@
             <h4>เมน — เซอร์กิต A (ทำทั้งหมด) — 3 รอบ • พัก 60 ถึง 90 วินาที</h4>
             <ul>
               <li id="ex-goblet-box">กอบเลตสควอตแตะกล่อง — 3 × 8–10 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 75 วินาที — <a href="https://www.youtube.com/watch?v=YpmA85upPBs" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> เสริมกำลังขาส่วนล่างและรูปแบบนั่ง‑ลุก ระยะลึกคงที่.<br/><span class="dim">การเตรียมท่า:</span> เท้ากว้างสะโพก จับดัมบเบลชิดอก ตั้งกล่องให้พอดีสบาย.<br/><span class="dim">การเคลื่อนไหว:</span> ฮินจ์สะโพกและนั่งไปข้างหลังให้แตะกล่องเบาๆ ดันผ่านกลางเท้าเพื่อยืนตัวตรง.<br/><span class="dim">การหายใจ:</span> หายใจเข้าขณะลง หายใจออกขณะยืนขึ้น.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> เข้าหุบเข้าด้านใน กระแทกกล่อง กลั้นหายใจ <span class="dim">ทางเลือก/การปรับ:</span> สควอตแตะกล่องแบบน้ำหนักตัว; ยกความสูงกล่องเมื่อท้องโตขึ้น.
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/_d0CRfK1_Rs" title="Goblet Box 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/r4o_VI3zJ9M" title="Goblet Box 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/SbRJOP3JASI" title="Goblet Box 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
+                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-goblet-box">กอบเลตสควอตแตะกล่อง</a></div>
               </li>
               <li id="ex-hip-hinge">ฮิปฮินจ์ด้วยดัมบเบล (ลักษณะโรมานียนเดดลิฟต์) — 3 × 8–10 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 75 วินาที — <a href="https://www.youtube.com/watch?v=Gs_c2PkdPJ4" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> เสริมกำลังหลังขาและก้น เพื่อพยุงท่าทางและลดอาการปวดหลัง.<br/><span class="dim">การเตรียมท่า:</span> เท้ากว้างสะโพก ถือดัมบเบลข้างลำตัว เข่างอเล็กน้อย ไหล่ผ่อนลง.<br/><span class="dim">การเคลื่อนไหว:</span> ดันสะโพกไปด้านหลังโดยหลังยาว ลดลงจนตึงหลังขา ยืนขึ้นด้วยแรงสะโพกไปข้างหน้า.<br/><span class="dim">การหายใจ:</span> หายใจเข้าขณะลดลง; ผ่อนลมหายใจช้าๆ ขณะยืนขึ้น.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> โค้งหลังล็อกเข่า ปล่อยดัมบเบลลอยห่างลำตัว <span class="dim">ทางเลือก/การปรับ:</span> ฮินจ์ด้วยมือที่สะโพก; ลดระยะเมื่อหลังตึง.
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/RbJUGaOENS0" title="Hip Hinge 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/_tNKM2dj4so" title="Hip Hinge 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/vdlUQuZig_I" title="Hip Hinge 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
+                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-hip-hinge">ฮิปฮินจ์ด้วยดัมบเบล</a></div>
               </li>
               <li id="ex-band-row">ดึงยางแรงต้าน (แถว) — 3 × 10–12 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 60 วินาที — <a href="https://www.youtube.com/watch?v=3oUPVvun6GM" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> เสริมกล้ามเนื้อหลังส่วนบนและท่าทาง ลดไหล่งุ้ม.<br/><span class="dim">การเตรียมท่า:</span> ยึดยางระดับอก ยืนหลังตรง ซี่โครงผ่อนลง คอเป็นกลาง.<br/><span class="dim">การเคลื่อนไหว:</span> ดึงศอกถอยหลังผ่านแนวซี่โครง ค้าง 1 วินาที ค่อยๆ คืนสู่จุดเริ่มต้น.<br/><span class="dim">การหายใจ:</span> หายใจออกตอนดึง; หายใจเข้าตอนคืน.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> ยกไหล่ กางซี่โครง เอนตัวมากเกินไป <span class="dim">ทางเลือก/การปรับ:</span> ดึงด้วยผ้าขนหนูพาดประตู; นั่งดึงเมื่อสมดุลไม่ดี.
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/GI_VEpenEmM" title="Band Row 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/u7YubzfIcTs" title="Band Row 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/v0sI0Ma2l_A" title="Band Row 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
+                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-band-row">ดึงยางแรงต้าน (แถว)</a></div>
               </li>
             </ul>
           </div>
@@ -156,13 +213,7 @@
             <h4>ฟินิชเชอร์ — แกนกลางและต้านการบิด (ทำทั้งหมด) — 2 รอบ • พัก 45 วินาที</h4>
             <ul>
               <li id="ex-pallof">พาลอฟเพรส — 2 × 10 ต่อข้าง ที่ระดับความหนักที่รับรู้ 4 ถึง 5 — <a href="https://www.youtube.com/watch?v=GkxLBDryNLU" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> สร้างเสถียรภาพแกนกลางแบบต้านการบิด พร้อมการหายใจที่ดี.<br/><span class="dim">การเตรียมท่า:</span> ยืนด้านข้างต่อจุดยึดยาง เข่างอเล็กน้อย มือถือยางระดับอก.<br/><span class="dim">การเคลื่อนไหว:</span> หายใจออกพร้อมดันแขนไปข้างหน้า ค้าง 1–2 วินาที แล้วค่อยดึงกลับ.<br/><span class="dim">การหายใจ:</span> ผ่อนลมหายใจยาวขณะดัน แขน กลับหายใจเข้าเบาๆ.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> บิดลำตัว ยกไหล่ กลั้นหายใจ <span class="dim">ทางเลือก/การปรับ:</span> ค้างครึ่งคุกเข่า ใช้ยางอ่อนลง หรือยื่นแขนสั้นลง.
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/VuqQ_LxMkCQ" title="Pallof 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/iu3hl9dOxJ8" title="Pallof 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/Di2qXAyTAak" title="Pallof 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
+                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-pallof">พาลอฟเพรส</a></div>
               </li>
             </ul>
           </div>
@@ -170,22 +221,10 @@
             <h4>คูลดาวน์ (ทำทั้งหมด) — 4 ถึง 6 นาที</h4>
             <ul>
               <li id="ex-thread">เธรดเดอะนีดิล 2 × 20–30 วินาที ต่อข้าง — <a href="https://www.youtube.com/watch?v=SFQ3F4SlwTo" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> หมุนเปิดช่วงอก ลดตึงหลังส่วนบน.<br/><span class="dim">การเตรียมท่า:</span> ตั้งสี่ขา หลังเป็นกลาง.<br/><span class="dim">การเคลื่อนไหว:</span> สอดแขนลอดใต้ลำตัว พักไหล่และศีรษะเบาๆ หายใจเข้าช่วงหลังส่วนบน แล้วสลับข้าง.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> ฝืนช่วงหรือบิดเอวล่าง.
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/7TxEfUmSXbw" title="Thread 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/8UIdpNwaJOc" title="Thread 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/rqbS9x2alhI" title="Thread 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
+                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-thread">เธรดเดอะนีดิล</a></div>
               </li>
               <li id="ex-calf-stretch">ยืดน่อง 2 × 20–30 วินาที ต่อข้าง — <a href="https://www.youtube.com/watch?v=CM1eioaIPcQ" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> เพิ่มความยืดหยุ่นข้อเท้าและน่อง เดินสบายขึ้น.<br/><span class="dim">การเตรียมท่า:</span> ก้าวเท้าหลังส้นติดพื้น ปลายเท้าชี้ตรง.<br/><span class="dim">การเคลื่อนไหว:</span> เอนตัวไปข้างหน้าจนตึงพอสมควร สะโพกหันตรง.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> เด้งยืดหรือเจ็บ ฝ่าเท้าล้มเข้า.
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/ZwY6wa22SMs" title="Calf 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/vdlUQuZig_I" title="Calf 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/RbJUGaOENS0" title="Calf 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
+                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-calf">ยืดน่อง</a></div>
               </li>
             </ul>
           </div>
@@ -193,13 +232,7 @@
             <h4>อุ้งเชิงกราน (ทำทั้งหมด) — 3 ถึง 4 นาที</h4>
             <ul>
               <li id="ex-kegels">คีเกล: 2 × 6 ครั้ง — เกร็งเบา 6 ถึง 8 วินาที แล้วคลายเต็มที่ — <a href="https://www.youtube.com/watch?v=nBfbJ-3tUdc" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> เสริมแรงและการประสานงานของอุ้งเชิงกราน.<br/><span class="dim">การหายใจ:</span> หายใจเข้าเพื่อผ่อนคลาย หายใจออกพร้อมยก‑เกร็งเบาๆ ค้าง 6 ถึง 8 วินาที แล้วผ่อนคลายเต็มที่ระหว่างรอบ.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> เกร็งก้นหรือหน้าท้อง กลั้นหายใจ หรือเกร็งมากเกินไป.
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/5Z_B9tyuZWk" title="Kegels 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/_tNKM2dj4so" title="Kegels 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/vdlUQuZig_I" title="Kegels 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
+                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-kegels">คีเกล</a></div>
               </li>
             </ul>
           </div>
@@ -212,13 +245,7 @@
             <h4>แผน (ทำทั้งหมด)</h4>
             <ul>
               <li id="ex-treadmill-incline">เดินลู่วิ่งปรับความชัน 30 นาที ที่ระดับความหนักที่รับรู้ 4 ถึง 5; ความชัน 0–3% — <a href="https://www.youtube.com/watch?v=g6fHFipijKs" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> คาร์ดิโอแรงกระแทกต่ำ เพิ่มความทนทานก้น‑ขา.<br/><span class="dim">การเตรียมท่า:</span> ผูกเชือกรองเท้าให้แน่น ตั้งความชัน 0 ถึง 3% จับราวเบาๆ เท่าที่จำเป็น.<br/><span class="dim">การเคลื่อนไหว:</span> ก้าวสั้น หลังตั้งตรง ความเร็วคงที่ที่ยังพูดเป็นประโยคได้.<br/><span class="dim">การหายใจ:</span> หายใจทางจมูกหรือจมูก‑ปากสบายๆ จิบน้ำตามต้องการ.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> กำราวแน่น ก้าวยาวเกินไป หรือร้อนเกินไป.
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/kWiwPMeVE9Y" title="Treadmill 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/L3q9GRBNt5Y" title="Treadmill 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/Olvz4XGtgws" title="Treadmill 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
+                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-treadmill">เดินลู่วิ่งปรับความชัน</a></div>
               </li>
               <li>ทางเลือก: เร่งจังหวะ 4 รอบ รอบละ 30 วินาที (เร็วขึ้นเล็กน้อย) พักเดินเบา 90 วินาทีระหว่างรอบ</li>
             </ul>
@@ -227,16 +254,9 @@
             <h4>โมบิลิตี/ยืดเหยียด (ทำทั้งหมด) — 6 ถึง 8 นาที</h4>
             <ul>
               <li>Cat‑Cow × 6 ถึง 8 รอบ — <a href="https://www.youtube.com/watch?v=9uY-vvV4Lgc" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> คลายสันหลังหลังคาร์ดิโอ.<br/><span class="dim">การเตรียมท่า:</span> มือใต้ไหล่ เข่าใต้สะโพก.<br/><span class="dim">การเคลื่อนไหว:</span> หายใจเข้า‑ออกช้าๆ โค้ง‑แอ่นอย่างนุ่มนวล.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> ฝืนช่วง.</li>
-              <li id="ex-hipflexor">ยืดสะโพกด้านหน้าแบบครึ่งคุกเข่า 2 × 20–30 วินาที ต่อข้าง — <a href="https://www.youtube.com/watch?v=gRwtTynOBcQ" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> ลดตึงหน้าสะโพก.<br/><span class="dim">การเตรียมท่า:</span> ลำตัวตั้งตรง เก็บเชิงกราน.
                 <br/><span class="dim">การเคลื่อนไหว:</span> ถ่ายน้ำหนักไปข้างหน้าเล็กน้อยจนรู้สึกตึงพอดี หายใจสบาย.
                 <br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> แอ่นหลังล่างหรือฝืนจนเจ็บ.
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/BFefBxBNVcM" title="Hip Flexor 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/RbJUGaOENS0" title="Hip Flexor 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/vdlUQuZig_I" title="Hip Flexor 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
+                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-hipflexor">ยืดสะโพกด้านหน้าแบบครึ่งคุกเข่า</a></div>
               </li>
             </ul>
           </div>
@@ -254,34 +274,22 @@
           <div class="block">
             <h4>อบอุ่นร่างกาย (ทำทั้งหมด) — 6 ถึง 8 นาที</h4>
             <ul>
-              <li>Cat‑Cow × 6 ถึง 8 รอบ — <a href="#ex-cat-cow">ดูวิดีโอ</a></li>
-              <li>การหายใจ 90/90 จำนวน 2 × 5 ลมหายใจ — <a href="#ex-9090">ดูวิดีโอ</a></li>
+              <li>Cat‑Cow × 6 ถึง 8 รอบ — <a href="#vid-cat-cow">ดูวิดีโอ</a></li>
+              <li>การหายใจ 90/90 จำนวน 2 × 5 ลมหายใจ — <a href="#vid-9090">ดูวิดีโอ</a></li>
             </ul>
           </div>
           <div class="block">
             <h4>เมน — เซอร์กิต A (ทำทั้งหมด) — 3 รอบ • พัก 60 ถึง 90 วินาที</h4>
             <ul>
               <li id="ex-incline-press">ดัมบเบลเพรสบนม้านั่งปรับองศา — 3 × 8–10 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 75 วินาที — <a href="https://www.youtube.com/watch?v=c4hw0hEeMhg" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> พัฒนากำลังดัน โดยไม่ต้องนอนหงายนาน.<br/><span class="dim">การเตรียมท่า:</span> ม้านั่งเอียง 30–45°; ดัมบเบลระดับอก; เท้าติดพื้น.<br/><span class="dim">การเคลื่อนไหว:</span> ดันขึ้นเล็กโค้ง ควบคุมลงแตะเบาๆ.<br/><span class="dim">การหายใจ:</span> หายใจออกขณะดัน; หายใจเข้าขณะลดลง.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> แอ่นหลัง ศอกกาง กลั้นหายใจ <span class="dim">ทางเลือก/การปรับ:</span> ดันพื้นพิงกำแพง — <a href="https://www.youtube.com/watch?v=y07lRV94DY4" target="_blank" rel="noopener">วิดีโอ</a>; เพิ่มความเอียงเมื่อท้องโตขึ้น.
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/FzBr6Uqj4xg" title="Incline Press 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/Mbdgo2MmMKc" title="Incline Press 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/z6sz2ZiGkxI" title="Incline Press 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
+                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-incline-press">ดัมบเบลเพรสบนม้านั่งปรับองศา</a></div>
               </li>
               <li>ดึงยางแรงต้าน (แถว) — 3 × 10–12 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 60 วินาที — <a href="https://www.youtube.com/watch?v=3oUPVvun6GM" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> ควบคุมสะบักและปรับท่าทาง.<br/><span class="dim">การเตรียมท่า:</span> ยึดยางระดับอก หลังตั้ง ซี่โครงผ่อนลง.<br/><span class="dim">การเคลื่อนไหว:</span> ดึงเข้าหาซี่โครง ค้าง 1 วินาที คืนช้าๆ.<br/><span class="dim">การหายใจ:</span> หายใจออกตอนดึง; หายใจเข้าตอนคืน.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> ไหล่ยก คอยื่น <span class="dim">ทางเลือก/การปรับ:</span> นั่งดึง.</li>
               <li>กอบเลตสควอตแตะกล่อง — 2 × 10 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 60 วินาที — <a href="https://www.youtube.com/watch?v=YpmA85upPBs" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> ตอกย้ำรูปแบบขาส่วนล่าง.<br/><span class="dim">การเตรียมท่า:</span> เท้ากว้างสะโพก ดัมบเบลชิดอก มีกล่องด้านหลัง.<br/><span class="dim">การเคลื่อนไหว:</span> ควบคุมลงแตะเบาๆ แล้วยืนตัวตรง.
                 <br/><span class="dim">Breathe:</span> inhale down; exhale to stand.
                 <br/><span class="dim">Avoid:</span> knees caving or rocking back. <span class="dim">Alternatives and Modifications:</span> body‑weight box squat; raise box height as pregnancy progresses.</li>
               <li id="ex-side-plank">ไซด์แพลงก์ (งอเข่า) — 2 × 15–25 วินาที ต่อข้าง; พัก 30 วินาที — <a href="https://www.youtube.com/watch?v=JdL-XF7QI8g" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> ความมั่นคงแกนกลางด้านข้างและสะโพก.<br/><span class="dim">การเตรียมท่า:</span> ศอกใต้ไหล่ เข่าซ้อนกัน ลำตัวเส้นตรงศีรษะถึงเข่า.<br/><span class="dim">การเคลื่อนไหว:</span> ยกสะโพกค้าง หายใจสม่ำเสมอ สลับข้าง.<br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> ไหล่ทรุดหรือบิดลำตัว <span class="dim">ทางเลือก/การปรับ:</span> ยกสูง หรือ ลดเวลาค้าง.
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/cXBVSUpxa3s" title="Side Plank 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/RbJUGaOENS0" title="Side Plank 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/bzxo4iS6IK0" title="Side Plank 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
+                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-side-plank">ไซด์แพลงก์</a></div>
               </li>
               <li>มอดิฟายด์เดดบัก — 2 × 6–8 ต่อข้าง; ช้า; พัก 30 วินาที — <a href="https://www.youtube.com/watch?v=HM0EcdXjF5s" target="_blank" rel="noopener">วิดีโอ</a><br/><span class="dim">วัตถุประสงค์:</span> ควบคุมแกนกลางร่วมกับการหายใจ ลดความเสี่ยงแยกของกล้ามท้องกลาง (ไดแอสทาซิส).
                 <br/><span class="dim">การเตรียมท่า:</span> นอนหงาย เข่า‑สะโพกงอ 90 องศา ซี่โครงผ่อนลง มือยกขึ้น.
@@ -317,15 +325,7 @@
               <li>กอบเลตสควอตแตะกล่อง — 3–4 × 8–10 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 75 วินาที — <a href="https://www.youtube.com/watch?v=YpmA85upPBs" target="_blank" rel="noopener">วิดีโอ</a></li>
               <li>ฮิปฮินจ์ด้วยดัมบเบล (โรมานียนเดดลิฟต์) — 3 × 8–10 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 75 วินาที — <a href="https://www.youtube.com/watch?v=Gs_c2PkdPJ4" target="_blank" rel="noopener">วิดีโอ</a></li>
               <li>ดึงยางแรงต้าน (แถว) — 3 × 10–12 ครั้ง ที่ระดับความหนักที่รับรู้ 5; พัก 60 วินาที — <a href="https://www.youtube.com/watch?v=3oUPVvun6GM" target="_blank" rel="noopener">วิดีโอ</a></li>
-              <li id="ex-suitcase">ซูตเคสแครรี — 2 × 20–30 เมตร ต่อข้าง; พัก 45 วินาที — <a href="https://www.youtube.com/watch?v=DBaG6nhdI_w" target="_blank" rel="noopener">วิดีโอ</a>
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/ztIen7Voeqs" title="Suitcase 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/Db3YZvI7Cuc" title="Suitcase 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/VcYgeNLkT-A" title="Suitcase 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
-              </li>
+              <li id="ex-suitcase">ซูตเคสแครรี — 2 × 20–30 เมตร ต่อข้าง; พัก 45 วินาที — <a href="https://www.youtube.com/watch?v=DBaG6nhdI_w" target="_blank" rel="noopener">วิดีโอ</a> <span class="vid-links">ดูวิดีโอ (3): <a href="#vid-suitcase">ซูตเคสแครรี</a></span></li>
             </ul>
           </div>
           <div class="block">
@@ -351,13 +351,7 @@
                 <br/><span class="dim">การเคลื่อนไหว:</span> จังหวะราบรื่น ต้านทานเบาถึงปานกลาง รักษาท่าทางดี.
                 <br/><span class="dim">การหายใจ:</span> หายใจเป็นจังหวะสบาย จิบน้ำเป็นระยะ.
                 <br/><span class="dim">ข้อควรหลีกเลี่ยง:</span> หนักเกินไปจนบดรอบขา เข้าหุบเข้าด้านใน.
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/oFHG8qoA4eU" title="Bike 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/ZkFHa9BCPvA" title="Bike 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/HBAB-I6Hous" title="Bike 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
+                <div class="vid-links">ดูวิดีโอ (3): <a href="#vid-bike">จักรยานอยู่กับที่</a></div>
               </li>
               <li>ทางเลือก: เร่งเบาๆ 6 รอบ รอบละ 45 วินาที พักง่าย 75 ถึง 90 วินาที</li>
             </ul>
@@ -377,29 +371,13 @@
                 พาลอฟเพรส — 2 × 10 ต่อข้าง ที่ระดับความหนักที่รับรู้ 4 ถึง 5 — <a href="https://www.youtube.com/watch?v=GkxLBDryNLU" target="_blank" rel="noopener">วิดีโอ</a>
               </li>
               <li><strong>ตัวเลือก B — โมบิลิตีและแกนกลาง</strong><br/>
-                Cat‑Cow × 8 — <a href="#ex-cat-cow">ดูวิดีโอ</a> • เธรดเดอะนีดิล 2 × 20–30 วินาที ต่อข้าง — <a href="#ex-thread">ดูวิดีโอ</a> • เบิร์ดด็อก 2 × 8 ต่อข้าง — <a href="#ex-bird-dog">ดูวิดีโอ</a> • ไซด์แพลงก์ (งอเข่า) 2 × 20–25 วินาที ต่อข้าง — <a href="#ex-side-plank">ดูวิดีโอ</a>
+                Cat‑Cow × 8 — <a href="#vid-cat-cow">ดูวิดีโอ</a> • เธรดเดอะนีดิล 2 × 20–30 วินาที ต่อข้าง — <a href="#vid-thread">ดูวิดีโอ</a> • เบิร์ดด็อก 2 × 8 ต่อข้าง — <a href="#vid-bird-dog">ดูวิดีโอ</a> • ไซด์แพลงก์ (งอเข่า) 2 × 20–25 วินาที ต่อข้าง — <a href="#vid-side-plank">ดูวิดีโอ</a>
               </li>
-              <li id="ex-split-squat">สปริทสควอตแบบมีพยุง — 3 × 8 ต่อข้าง — <a href="https://www.youtube.com/watch?v=OfA1Pbm3Q0w" target="_blank" rel="noopener">วิดีโอ</a>
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/_tNKM2dj4so" title="Split Squat 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/Olvz4XGtgws" title="Split Squat 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/vdlUQuZig_I" title="Split Squat 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
-              </li>
-              <li id="ex-bird-dog">เบิร์ดด็อก — 2 × 8 ต่อข้าง — <a href="https://www.youtube.com/watch?v=H7SZ9Hgb21I" target="_blank" rel="noopener">วิดีโอ</a>
-                <details><summary>วิดีโอแนะนำ (3)</summary>
-                  <div class="embed-grid">
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/Uh6cUpwZeEo" title="Bird Dog 1" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/UGs2hgjUar0" title="Bird Dog 2" allowfullscreen></iframe></div>
-                    <div class="embed"><iframe loading="lazy" src="https://www.youtube.com/embed/YooScnELGKY" title="Bird Dog 3" allowfullscreen></iframe></div>
-                  </div>
-                </details>
-              </li>
+              <li id="ex-split-squat">สปริทสควอตแบบมีพยุง — 3 × 8 ต่อข้าง — <span class="vid-links">ดูวิดีโอ (3): <a href="#vid-split-squat">สปริทสควอตแบบมีพยุง</a></span></li>
+              <li id="ex-bird-dog">เบิร์ดด็อก — 2 × 8 ต่อข้าง — <span class="vid-links">ดูวิดีโอ (3): <a href="#vid-bird-dog">เบิร์ดด็อก</a></span></li>
             </ul>
           </div>
-          <div class="block"><h4>อุ้งเชิงกราน (ทำทั้งหมด) — 3 ถึง 4 นาที</h4><ul><li>คีเกล: 2 × 6 ครั้ง — <a href="https://www.youtube.com/watch?v=nBfbJ-3tUdc" target="_blank" rel="noopener">วิดีโอ</a></li></ul></div>
+          <div class="block"><h4>อุ้งเชิงกราน (ทำทั้งหมด) — 3 ถึง 4 นาที</h4><ul><li>คีเกล: 2 × 6 ครั้ง — <a href="#vid-kegels">ดูวิดีโอ</a></li></ul></div>
         </article>
       </section>
 

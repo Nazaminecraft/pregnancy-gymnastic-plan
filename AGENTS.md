@@ -29,7 +29,7 @@ Pregnancy-safe exercise plan for a Thai woman, age 40.
 - Organization: three sessions per week as defined in “Three‑Session Weeks (Required)”.
 - Categories: Cardio, Strength, Core and Breathing, Mobility, Pelvic Floor.
 - Equipment: treadmill, swimming pool, fixed bicycle, resistance bands, dumbbells, yoga mat; always include body‑weight alternatives.
-- Videos: for every exercise embed three YouTube videos (prefer high‑quality Thai content; English acceptable if Thai is unavailable). Use <iframe> embeds (lazy‑load, allowfullscreen) and include clickable fallback links (target="_blank" rel="noopener").
+- Videos: provide three titled YouTube links per exercise (prefer high‑quality Thai content; English acceptable if Thai is unavailable). Create a single “Video Library” section listing links per exercise, and link to it from exercises via anchors. Do not embed iframes.
 - Language: write all plan content in Thai. Use full words (no abbreviations). If a technical English term improves clarity, put the full English term in parentheses on first mention.
 - Gestational Age anchor: use 25 August 2025 as 0 weeks 0 days; compute gestational age from this anchor only. Do not reference EDD.
 - Scope: the output file is `index.html`. Do not add additional files beyond `AGENTS.md` and `index.html` unless explicitly requested by the project owner.
@@ -69,14 +69,14 @@ For every exercise listed under Main Work, include:
 - Mistakes/Warnings: 4–6 common pitfalls and cautions (breath‑holding/Valsalva, poor alignment, excessive range, overheating, dizziness, pain flags).
 - Coaching cues: 2–3 short bullets (in addition to the above, if useful).
 - Modifications by trimester (first/second/third); note if not applicable.
-- Three embedded YouTube tutorial videos per exercise (prefer prenatal‑appropriate, Thai when possible) with fallback links.
+- Three YouTube tutorial links per exercise (prefer prenatal‑appropriate, Thai when possible) listed in the Video Library section.
 Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (adjust steps as appropriate).
 
 ## Cardio Block Details (Required)
 - Mode (treadmill/bike/pool/walk) and structure (steady, intervals, tempo).
 - Parameters: time/distance, Rate of Perceived Exertion, and rest (if intervals); include incline or cadence if relevant.
 - Alternatives: provide a non‑impact option and an equipment‑free option when possible.
-- Also include: Purpose (1–2 sentences), How (3–4 steps), and Mistakes/Warnings (3–5 items) for the chosen mode, plus three embedded videos with fallback links as above.
+- Also include: Purpose (1–2 sentences), How (3–4 steps), and Mistakes/Warnings (3–5 items) for the chosen mode, plus three titled links in the Video Library as above.
 
 ## Professional & Friendly Style (Guideline)
 - Tone: supportive and clear. Prefer friendly micro‑copy (“breathe easy; sip water”) over jargon.
