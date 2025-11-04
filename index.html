@@ -50,6 +50,14 @@
       .ok { color: var(--ok); }
       .warn { color: var(--warn); }
       .dim { color: #374151; font-weight: 500; }
+      /* Exercise Reference */
+      .ref-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; margin-top: 10px; }
+      article.video-group { border: 1px solid var(--line); background: #fff; border-radius: 12px; padding: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+      article.video-group h3 { margin: 0 0 6px; font-size: 1.05rem; color: #111827; }
+      article.video-group .block { background: #fafafa; border: 1px solid var(--line); border-radius: 10px; padding: 10px; margin: 6px 0 8px; }
+      article.video-group ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+      article.video-group ul li a { display: block; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: #f9fafb; }
+      article.video-group ul li a:hover { text-decoration: none; background: #f3f4f6; }
       nav.toc { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin: 10px 0 18px; }
       nav.toc .toc-title { margin: 0 0 8px; font-size: 1rem; color: #0f172a; font-weight: 700; }
       nav.toc .toc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
@@ -132,6 +140,7 @@
       <section class="week" aria-labelledby="reference">
         <h2 id="reference">คลังอ้างอิงท่า</h2>
         <p class="subtle">รายละเอียดท่าและวิดีโออ้างอิง (ท่าละ 3 ลิงก์)</p>
+        <div class="ref-grid">
         <article class="video-group" id="ref-cat-cow"><h3>Cat‑Cow</h3><div class="block"><h4>รายละเอียดท่า</h4><p><span class="dim">วัตถุประสงค์:</span> คลายและเพิ่มการควบคุมกระดูกสันหลัง ประสานกับการหายใจ.</p><p><span class="dim">การเตรียมท่า:</span> มือใต้ไหล่ เข่าใต้สะโพก หลังเป็นกลาง คอผ่อนคลาย.</p><p><span class="dim">การเคลื่อนไหว:</span> หายใจเข้าแอ่นหลังเล็กน้อย เปิดอก; หายใจออกโค้งหลังส่วนบนอย่างนุ่มนวล.</p><p><span class="dim">การหายใจ:</span> หายใจยาว สม่ำเสมอ ประสานกับการเคลื่อนไหว.</p><p><span class="dim">ข้อควรหลีกเลี่ยง:</span> ฝืนช่วง เกร็งคอ/ไหล่ หรือเจ็บปวด.</p></div><ul>
           <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=vspCu9qBh14">วิดีโอ 1</a></li>
           <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=D2PAtLj_R1A">วิดีโอ 2</a></li>
@@ -222,6 +231,7 @@
           <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=RbJUGaOENS0">วิดีโอ 2</a></li>
           <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=vdlUQuZig_I">วิดีโอ 3</a></li>
         </ul></article>
+        </div>
       </section>
 
       <!-- Week 10: Three Sessions -->
@@ -475,8 +485,7 @@
                   <div class="k">อุปกรณ์</div><div>ดัมบเบล, ม้านั่งปรับองศา</div>
                   <div class="k">รายละเอียด</div><div><a href="#ref-incline-press">ดูรายละเอียด</a></div>
                 </div>
-                <span class="dim">วัตถุประสงค์:</span> พัฒนากำลังดัน โดยไม่ต้องนอนหงายนาน.<br/>
-                <span class="dim">การเตรียมท่า:</span> ม้านั่งเอียง 30–45° ดัมบเบลระดับอก เท้าติดพื้น.<br/>
+                
                 
               </li>
               <li>
@@ -656,11 +665,7 @@
                   <div class="k">อุปกรณ์</div><div>จักรยานอยู่กับที่</div>
                   <div class="k">รายละเอียด</div><div><a href="#ref-bike">ดูรายละเอียด</a></div>
                 </div>
-                <span class="dim">วัตถุประสงค์:</span> แอโรบิกแรงกระแทกต่ำ เพิ่มความทนทานระบบไหลเวียน.
-                <span class="dim">การเตรียมท่า:</span> ปรับอานให้เข่าเหยียดเกือบสุดตอนกดสุดรอบ จับแฮนด์หลวมๆ.
-                <span class="dim">การเคลื่อนไหว:</span> จังหวะราบรื่น ต้านทานเบาถึงปานกลาง รักษาท่าทางดี.
-                <span class="dim">การหายใจ:</span> หายใจเป็นจังหวะสบาย จิบน้ำเป็นระยะ.
-                <span class="dim">ข้อควรหลีกเลี่ยง:</span> หนักเกินไปจนบดรอบขา เข่าหุบเข้าด้านใน.
+                
               </li>
               <li>ทางเลือก: เร่งเบาๆ 6 รอบ รอบละ 45 วินาที พักง่าย 75 ถึง 90 วินาที</li>
             </ul>
@@ -684,10 +689,7 @@
                       <div class="k">อุปกรณ์</div><div>ดัมบเบล, ม้านั่งปรับองศา</div>
                       <div class="k">รายละเอียด</div><div><a href="#ref-incline-press">ดูรายละเอียด</a></div>
                     </div>
-                    <span class="dim">วัตถุประสงค์:</span> พัฒนากำลังดันส่วนบน โดยหลีกเลี่ยงการนอนหงายนาน.<br/>
-                    <span class="dim">การเตรียมท่า:</span> ม้านั่งเอียง 30–45° ดัมบเบลระดับอก เท้าติดพื้น หลังยาวสบาย.<br/>
-                    <span class="dim">การเคลื่อนไหว:</span> ดันขึ้นเล็กโค้ง ควบคุมลดลงแตะเบาๆ หายใจออกตอนดัน.
-                    <span class="dim">ข้อควรหลีกเลี่ยง:</span> แอ่นหลังมาก ศอกกาง กลั้นหายใจ.
+                    
                   </li>
                   <li>
                     <h5 class="ex-name">ดึงยางแรงต้าน (แถว)</h5>
@@ -698,10 +700,7 @@
                       <div class="k">อุปกรณ์</div><div>ยางยืดแรงต้าน</div>
                       <div class="k">รายละเอียด</div><div><a href="#ref-band-row">ดูรายละเอียด</a></div>
                     </div>
-                    <span class="dim">วัตถุประสงค์:</span> เสริมกล้ามหลังบนและควบคุมสะบัก ช่วยปรับท่าทาง.<br/>
-                    <span class="dim">การเตรียมท่า:</span> ยึดยางระดับอก หลังตั้ง ซี่โครงผ่อนลง.
-                    <span class="dim">การเคลื่อนไหว:</span> ดึงเข้าหาซี่โครง ค้างสั้นๆ แล้วคืนช้าๆ.
-                    <span class="dim">ข้อควรหลีกเลี่ยง:</span> ไหล่ยก คอยื่น โยกตัว.
+                    
                   </li>
                   <li>
                     <h5 class="ex-name">สปริทสควอตแบบมีพยุง</h5>
@@ -712,10 +711,7 @@
                       <div class="k">อุปกรณ์</div><div>เก้าอี้/กำแพงสำหรับพยุง</div>
                       <div class="k">รายละเอียด</div><div><a href="#ref-split-squat">ดูรายละเอียด</a></div>
                     </div>
-                    <span class="dim">วัตถุประสงค์:</span> เสริมกำลังขา‑สะโพกและการทรงตัว.
-                    <span class="dim">การเตรียมท่า:</span> ก้าวแยกเท้า กำแพง/เก้าอี้ช่วยพยุง ลำตัวตั้งตรง.
-                    <span class="dim">การเคลื่อนไหว:</span> ย่อลงจนตึงพอดี ดันผ่านกลางเท้าหน้าให้ยืนตรง.
-                    <span class="dim">ข้อควรหลีกเลี่ยง:</span> เข้มหุบ‑เข่าเลยปลายเท้ามาก โยกตัว.
+                    
                   </li>
                   <li>
                     <h5 class="ex-name">พาลอฟเพรส</h5>
@@ -726,10 +722,7 @@
                       <div class="k">อุปกรณ์</div><div>ยางยืดแรงต้าน/สายเคเบิล</div>
                       <div class="k">รายละเอียด</div><div><a href="#ref-pallof">ดูรายละเอียด</a></div>
                     </div>
-                    <span class="dim">วัตถุประสงค์:</span> สร้างความมั่นคงแกนกลางต้านการหมุน.
-                    <span class="dim">การเตรียมท่า:</span> ยืนข้างจุดยึดสาย ยืดสายตึงเล็กน้อย ซี่โครงผ่อนลง.
-                    <span class="dim">การเคลื่อนไหว:</span> ดันแขนออก‑ค้างสั้นๆ รักษาลำตัวนิ่ง แล้วดึงกลับ.
-                    <span class="dim">ข้อควรหลีกเลี่ยง:</span> บิดลำตัว ไหล่ยก กลั้นหายใจ.
+                    
                   </li>
                 </ul>
               </li>
@@ -758,10 +751,7 @@
                       <div class="k">อุปกรณ์</div><div>เสื่อโยคะ/หมอนรองศีรษะ (ถ้าจำเป็น)</div>
                       <div class="k">รายละเอียด</div><div><a href="#ref-thread">ดูรายละเอียด</a></div>
                     </div>
-                    <span class="dim">วัตถุประสงค์:</span> เปิดช่วงอก คลายหลังส่วนบน เพิ่มการหมุนทรวงอก.
-                    <span class="dim">การเตรียมท่า:</span> ตั้งสี่ขา หลังเป็นกลาง คอผ่อน.
-                    <span class="dim">การเคลื่อนไหว:</span> สอดแขนลอดใต้ลำตัว พักศีรษะเบาๆ แล้วสลับข้าง.
-                    <span class="dim">ข้อควรหลีกเลี่ยง:</span> บิดจากเอวล่างหรือฝืนจนเจ็บ.
+                    
                   </li>
                   <li>
                     <h5 class="ex-name">เบิร์ดด็อก</h5>
@@ -772,10 +762,7 @@
                       <div class="k">อุปกรณ์</div><div>เสื่อโยคะ</div>
                       <div class="k">รายละเอียด</div><div><a href="#ref-bird-dog">ดูรายละเอียด</a></div>
                     </div>
-                    <span class="dim">วัตถุประสงค์:</span> ฝึกควบคุมแกนกลางร่วมกับการเคลื่อนไหวแขน‑ขา.
-                    <span class="dim">การเตรียมท่า:</span> ตั้งสี่ขา หลังเป็นกลาง ซี่โครงผ่อนลง.
-                    <span class="dim">การเคลื่อนไหว:</span> เหยียดแขน‑ขาตรงข้ามช้าๆ กลับโดยคงหลังนิ่ง.
-                    <span class="dim">ข้อควรหลีกเลี่ยง:</span> สะโพกโยก หลังแอ่น กลั้นหายใจ.
+                    
                   </li>
                   <li>
                     <h5 class="ex-name">ไซด์แพลงก์ (งอเข่า)</h5>

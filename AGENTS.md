@@ -69,7 +69,7 @@ For every exercise listed under Main Work, include:
 - Mistakes/Warnings: 4–6 common pitfalls and cautions (breath‑holding/Valsalva, poor alignment, excessive range, overheating, dizziness, pain flags).
 - Coaching cues: 2–3 short bullets (in addition to the above, if useful).
 - Modifications by trimester (first/second/third); note if not applicable.
-- Three YouTube tutorial links per exercise (prefer prenatal‑appropriate, Thai when possible) listed in the Video Library section.
+- Three YouTube tutorial links per exercise (prefer prenatal‑appropriate, Thai when possible) listed in the Exercise Reference section.
 Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (adjust steps as appropriate).
 
 ## Presentation (Required)
@@ -81,7 +81,7 @@ Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (
 - Mode (treadmill/bike/pool/walk) and structure (steady, intervals, tempo).
 - Parameters: time/distance, Rate of Perceived Exertion, and rest (if intervals); include incline or cadence if relevant.
 - Alternatives: provide a non‑impact option and an equipment‑free option when possible.
-- Also include: Purpose (1–2 sentences), How (3–4 steps), and Mistakes/Warnings (3–5 items) for the chosen mode, plus three titled links in the Video Library as above.
+- Also include: Purpose (1–2 sentences), How (3–4 steps), and Mistakes/Warnings (3–5 items) for the chosen mode, plus three titled links in the Exercise Reference as above.
 
 ## Navigation & Anchors (Required)
 - Table of Contents near the top with grouped links:
@@ -103,7 +103,15 @@ Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (
 - Use one section per week with clear, concise headings (for example, “สัปดาห์ที่ 10”).
 - If needed, include gestational age and calendar date range as a subtle meta line just under the H2 and/or as data attributes; do not append them to the H2 text.
 - Minimal example markup:
-  - TOC groups and chips linking to `#howto`, `#videos`, `#wN`, and `#wN-sM`.
+  - TOC groups and chips linking to `#howto`, `#reference`, `#wN`, and `#wN-sM`.
   - Week wrapper: <section class="week" data-week="N" data-gestational-age="N weeks 0 days to N weeks 6 days"><h2 id="wN">สัปดาห์ที่ N</h2><div class="week-meta">อายุครรภ์ … — ช่วงวันที่ …</div>…</section>
   - Session block: <article class="session" data-session="1" data-focus="Strength"><h3 id="wN-s1">…</h3>…</article>
-  - Exercise item: render spec table + descriptive blocks; link “วิดีโอ” to the Video Library anchors only.
+  - Exercise item: render spec table + descriptive blocks inside the Exercise Reference; in sessions, include a “รายละเอียด” row that links to the Exercise Reference anchors only.
+
+## Exercise Reference Layout (Guideline)
+- Section id: `reference`; anchors per exercise: `ref-<slug>`.
+- Layout: grid of cards (`.ref-grid`) with each card as an `<article>` containing:
+  - `<h3>` exercise name
+  - “รายละเอียดท่า” block with วัตถุประสงค์, การเตรียมท่า, การเคลื่อนไหว, การหายใจ, ข้อควรหลีกเลี่ยง
+  - A short list of three titled YouTube links
+- Sessions must not duplicate these details; link via the “รายละเอียด” row only.
