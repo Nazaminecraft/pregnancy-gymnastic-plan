@@ -50,10 +50,15 @@
       .ok { color: var(--ok); }
       .warn { color: var(--warn); }
       .dim { color: #374151; font-weight: 500; }
-      nav.toc { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin: 10px 0 18px; }
-      nav.toc .toc-title { margin: 0 0 6px; font-size: 0.95rem; color: var(--accent); font-weight: 600; }
-      nav.toc ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
-      nav.toc a { color: var(--accent); }
+      nav.toc { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin: 10px 0 18px; }
+      nav.toc .toc-title { margin: 0 0 8px; font-size: 1rem; color: #0f172a; font-weight: 700; }
+      nav.toc .toc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
+      nav.toc .toc-group { border: 1px solid var(--line); background: #f9fafb; border-radius: 10px; padding: 10px; }
+      nav.toc .toc-h { margin: 0 0 6px; font-weight: 600; color: #111827; }
+      nav.toc .toc-h a { color: #111827; text-decoration: none; }
+      nav.toc .toc-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+      nav.toc .toc-chip { display: inline-block; border: 1px solid var(--line); background: #ffffff; border-radius: 999px; padding: 4px 10px; font-size: 0.9rem; color: #1f2937; text-decoration: none; }
+      nav.toc .toc-chip:hover { text-decoration: none; border-color: #e5e7eb; background: #f3f4f6; }
     </style>
   </head>
   <body>
@@ -71,20 +76,31 @@
 
       <nav class="toc" aria-label="สารบัญ">
         <div class="toc-title">สารบัญ</div>
-        <ul>
-          <li>
-            <a href="#w10">สัปดาห์ที่ 10</a>:
-            <a href="#w10-s1">เซสชันที่ 1</a>
-            • <a href="#w10-s2">เซสชันที่ 2</a>
-            • <a href="#w10-s3">เซสชันที่ 3</a>
-          </li>
-          <li>
-            <a href="#w11">สัปดาห์ที่ 11</a>:
-            <a href="#w11-s1">เซสชันที่ 1</a>
-            • <a href="#w11-s2">เซสชันที่ 2</a>
-            • <a href="#w11-s3">เซสชันที่ 3</a>
-          </li>
-        </ul>
+        <div class="toc-grid">
+          <div class="toc-group" aria-label="เริ่มต้น">
+            <div class="toc-h"><a href="#howto">วิธีใช้งานแผน</a></div>
+            <ul class="toc-list">
+              <li><a class="toc-chip" href="#howto">ภาพรวม</a></li>
+              <li><a class="toc-chip" href="#videos">คลังวิดีโอ</a></li>
+            </ul>
+          </div>
+          <div class="toc-group" aria-label="สัปดาห์ที่ 10">
+            <div class="toc-h"><a href="#w10">สัปดาห์ที่ 10</a></div>
+            <ul class="toc-list">
+              <li><a class="toc-chip" href="#w10-s1">เซสชันที่ 1</a></li>
+              <li><a class="toc-chip" href="#w10-s2">เซสชันที่ 2</a></li>
+              <li><a class="toc-chip" href="#w10-s3">เซสชันที่ 3</a></li>
+            </ul>
+          </div>
+          <div class="toc-group" aria-label="สัปดาห์ที่ 11">
+            <div class="toc-h"><a href="#w11">สัปดาห์ที่ 11</a></div>
+            <ul class="toc-list">
+              <li><a class="toc-chip" href="#w11-s1">เซสชันที่ 1</a></li>
+              <li><a class="toc-chip" href="#w11-s2">เซสชันที่ 2</a></li>
+              <li><a class="toc-chip" href="#w11-s3">เซสชันที่ 3</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
 
       <section class="week" aria-labelledby="howto">
