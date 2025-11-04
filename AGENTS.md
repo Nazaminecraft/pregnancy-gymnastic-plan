@@ -29,7 +29,7 @@ Pregnancy-safe exercise plan for a Thai woman, age 40.
 - Organization: include a concise Table of Contents near the top, then three sessions per week as defined in “Three‑Session Weeks (Required)”.
 - Categories: Cardio, Strength, Core and Breathing, Mobility, Pelvic Floor.
 - Equipment: treadmill, swimming pool, fixed bicycle, resistance bands, dumbbells, yoga mat; always include body‑weight alternatives.
-- Videos: provide three titled YouTube links per exercise (prefer high‑quality Thai content; English acceptable if Thai is unavailable). Create a single “Video Library” section listing links per exercise, and link to it from exercises via anchors. Do not embed iframes.
+- Exercise Reference: create a single “Exercise Reference” section that lists each exercise with its details and three titled YouTube links (prefer high‑quality Thai content; English acceptable if Thai is unavailable). Sessions link to this section for details. Do not embed iframes.
 - Language: write all plan content in Thai. Use full words (no abbreviations). If a technical English term improves clarity, put the full English term in parentheses on first mention.
 - Gestational Age anchor: use 25 August 2025 as 0 weeks 0 days; compute gestational age from this anchor only. Do not reference EDD.
 - Scope: the output file is `index.html`. Do not add additional files beyond `AGENTS.md` and `index.html` unless explicitly requested by the project owner.
@@ -73,10 +73,9 @@ For every exercise listed under Main Work, include:
 Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (adjust steps as appropriate).
 
 ## Presentation (Required)
-- For each exercise, render a compact “spec table” first, then follow with descriptive text blocks. Do not mix parameters inline with prose.
-- Spec table rows to include when applicable: จำนวน/เวลา, ความหนัก (Rate of Perceived Exertion), พัก, อุปกรณ์, ทางเลือก/การปรับ, วิดีโอ (link to Video Library anchor).
-- Spec table “วิดีโอ” row: label the link as “ดูวิดีโอ” (do not include counts like “(3)”). The Video Library itself still hosts three links per exercise.
-- Separate descriptive blocks: วัตถุประสงค์, การเตรียมท่า, การเคลื่อนไหว, การหายใจ, ข้อควรหลีกเลี่ยง.
+- In sessions: show a compact prescription only (name + จำนวน/เวลา, ความหนัก, พัก, อุปกรณ์) and link to the Exercise Reference for details using a row labeled “รายละเอียด”. Do not duplicate long descriptions inside sessions.
+- In the Exercise Reference: render details for each exercise (วัตถุประสงค์, การเตรียมท่า, การเคลื่อนไหว, การหายใจ, ข้อควรหลีกเลี่ยง) and list three titled YouTube links.
+- Spec row labels (sessions): จำนวน/เวลา, ความหนัก (Rate of Perceived Exertion), พัก, อุปกรณ์, รายละเอียด (link to Exercise Reference anchor).
 
 ## Cardio Block Details (Required)
 - Mode (treadmill/bike/pool/walk) and structure (steady, intervals, tempo).
@@ -86,13 +85,13 @@ Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (
 
 ## Navigation & Anchors (Required)
 - Table of Contents near the top with grouped links:
-  - Group “เริ่มต้น”: links to `#howto` (วิธีใช้งานแผน) and `#videos` (คลังวิดีโออ้างอิง).
+  - Group “เริ่มต้น”: links to `#howto` (วิธีใช้งานแผน) and `#reference` (คลังอ้างอิงท่า).
   - For each week: link to `#wN` and chips to sessions `#wN-s1`, `#wN-s2`, `#wN-s3`.
 - Anchors and IDs to use:
-  - How‑to: `howto`; Video Library: `videos`.
+  - How‑to: `howto`; Exercise Reference: `reference`.
   - Week headings: `w10`, `w11`, …
   - Session headings: `w10-s1`, `w10-s2`, `w10-s3`, `w11-s1`, …
-- Do not place raw YouTube links in exercise content; link only to the Video Library anchors.
+- Do not place raw YouTube links in session content; link only to the Exercise Reference anchors.
 
 ## Professional & Friendly Style (Guideline)
 - Tone: supportive and clear. Prefer friendly micro‑copy (“breathe easy; sip water”) over jargon.
