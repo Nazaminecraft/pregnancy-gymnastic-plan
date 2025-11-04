@@ -50,6 +50,10 @@
       .ok { color: var(--ok); }
       .warn { color: var(--warn); }
       .dim { color: #374151; font-weight: 500; }
+      nav.toc { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin: 10px 0 18px; }
+      nav.toc .toc-title { margin: 0 0 6px; font-size: 0.95rem; color: var(--accent); font-weight: 600; }
+      nav.toc ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+      nav.toc a { color: var(--accent); }
     </style>
   </head>
   <body>
@@ -64,6 +68,14 @@
         </div>
         <div class="subtle">คำแนะนำทั่วไปเท่านั้น ไม่ใช่คำแนะนำทางการแพทย์ คงความหนักระดับปานกลาง (ระดับความหนักที่รับรู้ 4 ถึง 6) ใช้การพูดทดสอบ (ยังพูดเป็นประโยคได้) ดื่มน้ำเพียงพอ และหลีกเลี่ยงการร้อนเกินไป</div>
       </header>
+
+      <nav class="toc" aria-label="สารบัญ">
+        <div class="toc-title">สารบัญ</div>
+        <ul>
+          <li><a href="#w10">สัปดาห์ที่ 10</a></li>
+          <li><a href="#w11">สัปดาห์ที่ 11</a></li>
+        </ul>
+      </nav>
 
       <section class="week" aria-labelledby="howto">
         <h2 id="howto">วิธีใช้งานแผน</h2>
@@ -91,8 +103,8 @@
 
       <!-- Video Library -->
       <section class="week" aria-labelledby="videos">
-        <h2 id="videos">วิดีโอแนะนำ (รวมลิงก์ต่อท่า)</h2>
-        <p class="subtle">ด้านล่างนี้คือวิดีโอ 3 ลิงก์สำหรับแต่ละท่า เพื่อหลีกเลี่ยงความซ้ำซ้อนในตัวเนื้อหา เราเชื่อมโยงจากท่าไปยังส่วนนี้</p>
+        <h2 id="videos">คลังวิดีโออ้างอิง</h2>
+        <p class="subtle">วิดีโออ้างอิงสำหรับแต่ละท่า (ท่าละ 3 ลิงก์)</p>
         <article class="video-group" id="vid-cat-cow"><h3>Cat‑Cow</h3><ul>
           <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=vspCu9qBh14">วิดีโอ 1</a></li>
           <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=D2PAtLj_R1A">วิดีโอ 2</a></li>
@@ -187,7 +199,7 @@
 
       <!-- Week 10: Three Sessions -->
       <section class="week" data-week="10" data-gestational-age="10 weeks 0 days to 10 weeks 6 days" aria-labelledby="w10">
-        <h2 id="w10">สัปดาห์ที่ 10 (อายุครรภ์ 10 สัปดาห์ 0 วัน ถึง 10 สัปดาห์ 6 วัน) — 2025‑11‑03 ถึง 2025‑11‑09</h2>
+        <h2 id="w10">สัปดาห์ที่ 10</h2>
 
         <article class="session" data-session="1" data-focus="Strength">
           <h3>เซสชันที่ 1 — เวท A (เน้นส่วนล่าง) — 35 ถึง 40 นาที — ระดับความหนักที่รับรู้ 4 ถึง 6</h3>
@@ -553,7 +565,7 @@
 
       <!-- Week 11: Three Sessions -->
       <section class="week" data-week="11" data-gestational-age="11 weeks 0 days to 11 weeks 6 days" aria-labelledby="w11">
-        <h2 id="w11">สัปดาห์ที่ 11 (อายุครรภ์ 11 สัปดาห์ 0 วัน ถึง 11 สัปดาห์ 6 วัน) — 2025‑11‑10 ถึง 2025‑11‑16</h2>
+        <h2 id="w11">สัปดาห์ที่ 11</h2>
 
         <article class="session" data-session="1" data-focus="Strength">
           <h3>เซสชันที่ 1 — เวท A — 35 ถึง 40 นาที — ระดับความหนักที่รับรู้ 4 ถึง 6</h3>
