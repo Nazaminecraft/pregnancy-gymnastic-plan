@@ -26,7 +26,7 @@ Pregnancy-safe exercise plan for a Thai woman, age 40.
 - Format: deliver a single, moderately styled HTML file unless requested otherwise.
 - Styling: semantic HTML with a small inline <style>; responsive layout; no heavy frameworks, no external fonts.
 - Visual theme: light, professional, friendly. Use white/soft‑grey surfaces, clear borders, generous whitespace, accessible contrast (WCAG AA). Avoid dark/low‑contrast themes.
-- Organization: three sessions per week as defined in “Three‑Session Weeks (Required)”.
+- Organization: include a concise Table of Contents near the top, then three sessions per week as defined in “Three‑Session Weeks (Required)”.
 - Categories: Cardio, Strength, Core and Breathing, Mobility, Pelvic Floor.
 - Equipment: treadmill, swimming pool, fixed bicycle, resistance bands, dumbbells, yoga mat; always include body‑weight alternatives.
 - Videos: provide three titled YouTube links per exercise (prefer high‑quality Thai content; English acceptable if Thai is unavailable). Create a single “Video Library” section listing links per exercise, and link to it from exercises via anchors. Do not embed iframes.
@@ -35,7 +35,7 @@ Pregnancy-safe exercise plan for a Thai woman, age 40.
 - Scope: the output file is `index.html`. Do not add additional files beyond `AGENTS.md` and `index.html` unless explicitly requested by the project owner.
 
 ## Three‑Session Weeks (Required)
-- Group sessions by Week N. Keep week headings concise (for example, “สัปดาห์ที่ 10”). If useful, include gestational age and date range as subtle meta or data attributes — not in the main heading.
+- Group sessions by Week N. Keep week headings concise (for example, “สัปดาห์ที่ 10”). If useful, include gestational age and date range as a subtle meta line directly under the H2 and/or as data attributes — not inside the main heading.
 - Each Week must include exactly three Sessions:
   - Session 1 — Strength and Movement Quality (Lower emphasis or full body)
   - Session 2 — Cardio Endurance (treadmill, stationary bicycle, or pool)
@@ -84,6 +84,16 @@ Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (
 - Alternatives: provide a non‑impact option and an equipment‑free option when possible.
 - Also include: Purpose (1–2 sentences), How (3–4 steps), and Mistakes/Warnings (3–5 items) for the chosen mode, plus three titled links in the Video Library as above.
 
+## Navigation & Anchors (Required)
+- Table of Contents near the top with grouped links:
+  - Group “เริ่มต้น”: links to `#howto` (วิธีใช้งานแผน) and `#videos` (คลังวิดีโออ้างอิง).
+  - For each week: link to `#wN` and chips to sessions `#wN-s1`, `#wN-s2`, `#wN-s3`.
+- Anchors and IDs to use:
+  - How‑to: `howto`; Video Library: `videos`.
+  - Week headings: `w10`, `w11`, …
+  - Session headings: `w10-s1`, `w10-s2`, `w10-s3`, `w11-s1`, …
+- Do not place raw YouTube links in exercise content; link only to the Video Library anchors.
+
 ## Professional & Friendly Style (Guideline)
 - Tone: supportive and clear. Prefer friendly micro‑copy (“breathe easy; sip water”) over jargon.
 - Typography: base 16px+, 1.5–1.65 line‑height, short paragraphs, bullets where helpful.
@@ -92,8 +102,9 @@ Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (
 
 ## HTML Structure (Guideline)
 - Use one section per week with clear, concise headings (for example, “สัปดาห์ที่ 10”).
-- If needed, include gestational age and calendar date range as data attributes or a subtle meta line, not in the H2.
+- If needed, include gestational age and calendar date range as a subtle meta line just under the H2 and/or as data attributes; do not append them to the H2 text.
 - Minimal example markup:
-  - Week wrapper: <section class="week" data-week="N" data-gestational-age="18 weeks 0 days to 18 weeks 6 days">…</section>
-  - Session block: <article class="session" data-session="1" data-focus="Strength">…</article>
-  - Exercise item: <li class="exercise"><a href="YT_LINK" target="_blank" rel="noopener">Name</a> — sets × repetitions or time at Rate of Perceived Exertion N; key cues…</li>
+  - TOC groups and chips linking to `#howto`, `#videos`, `#wN`, and `#wN-sM`.
+  - Week wrapper: <section class="week" data-week="N" data-gestational-age="N weeks 0 days to N weeks 6 days"><h2 id="wN">สัปดาห์ที่ N</h2><div class="week-meta">อายุครรภ์ … — ช่วงวันที่ …</div>…</section>
+  - Session block: <article class="session" data-session="1" data-focus="Strength"><h3 id="wN-s1">…</h3>…</article>
+  - Exercise item: render spec table + descriptive blocks; link “วิดีโอ” to the Video Library anchors only.
