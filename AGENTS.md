@@ -16,7 +16,7 @@ Pregnancy-safe exercise plan for a Thai woman, age 40.
 - Keep intensity moderate (Rate of Perceived Exertion 4 to 6; talk test). Stay hydrated; avoid overheating.
 
 ## When Adding Sessions
-- Keep workouts 30 minutes: warm‑up, main, cool‑down.
+- Keep sessions around 25–40 minutes total: warm‑up, main, cool‑down.
 - Offer an equipment‑free alternative for each exercise.
 - Use stable positions; avoid prolonged supine work as gestation advances.
 - No maximal efforts; leave two to four repetitions in reserve.
@@ -26,16 +26,13 @@ Pregnancy-safe exercise plan for a Thai woman, age 40.
 - Format: deliver a single, moderately styled HTML file unless requested otherwise.
 - Styling: semantic HTML with a small inline <style>; responsive layout; no heavy frameworks, no external fonts.
 - Visual theme: light, professional, friendly. Use white/soft‑grey surfaces, clear borders, generous whitespace, accessible contrast (WCAG AA). Avoid dark/low‑contrast themes.
- - Organization: แผนต้องจัดเป็นรายสัปดาห์ โดยมี 3 เซสชันต่อสัปดาห์ตามข้อกำหนด “Three‑Session Weeks (Required)”.
-- Categories: Cardio, Strength, Core & Breathing, Mobility, Pelvic Floor.
+- Organization: three sessions per week as defined in “Three‑Session Weeks (Required)”.
+- Categories: Cardio, Strength, Core and Breathing, Mobility, Pelvic Floor.
 - Equipment: treadmill, swimming pool, fixed bicycle, resistance bands, dumbbells, yoga mat; always include body‑weight alternatives.
- - วิดีโอ: สำหรับทุกท่า ให้แนบวิดีโอจาก YouTube อย่างน้อย 3 รายการ (เน้นช่องคุณภาพ/เฉพาะสายคุณแม่ตั้งครรภ์ก่อน) และฝัง (embed) วิดีโอในเพจด้วย <iframe> (lazy‑load, allowfullscreen). ให้มีลิงก์สำรองที่คลิกได้ด้วย เปิดแท็บใหม่ (target="_blank" rel="noopener").
-- Gestational Age anchor: use 25 August 2025 as 0 weeks 0 days; compute gestational age from this anchor only.
--. No abbreviations: write terms in full (for example, use Gestational Age not GA, Rate of Perceived Exertion not RPE, minutes not min, seconds not s, repetitions not reps, dumbbell not DB). Spell month and day names in full.
-- Scope: do not add or modify files beyond `AGENTS.md` without explicit request from the project owner.
- - Language: write all plan content in Thai. Use full words (no abbreviations). If a technical English term improves clarity, place the full English term in parentheses after the Thai term at the first mention only.
- - Videos: prefer high‑quality Thai videos when available; otherwise English videos are acceptable.
- - No abbreviations: write terms in full (for example, use “อายุครรภ์” not “GA”, “ระดับความหนักที่รับรู้” not “RPE”, “นาที” not “min”, “วินาที” not “s”, “ครั้ง” not “reps”, “ดัมบเบล” not “DB”). Spell month and day names in full when writing dates in Thai.
+- Videos: for every exercise embed three YouTube videos (prefer high‑quality Thai content; English acceptable if Thai is unavailable). Use <iframe> embeds (lazy‑load, allowfullscreen) and include clickable fallback links (target="_blank" rel="noopener").
+- Language: write all plan content in Thai. Use full words (no abbreviations). If a technical English term improves clarity, put the full English term in parentheses on first mention.
+- Gestational Age anchor: use 25 August 2025 as 0 weeks 0 days; compute gestational age from this anchor only. Do not reference EDD.
+- Scope: the output file is `index.html`. Do not add additional files beyond `AGENTS.md` and `index.html` unless explicitly requested by the project owner.
 
 ## Three‑Session Weeks (Required)
 - Group sessions by Week N. Show the gestational age range for the week (for example, 18 weeks 0 days to 18 weeks 6 days) and the calendar date range if helpful.
@@ -72,14 +69,14 @@ For every exercise listed under Main Work, include:
 - Mistakes/Warnings: 4–6 common pitfalls and cautions (breath‑holding/Valsalva, poor alignment, excessive range, overheating, dizziness, pain flags).
 - Coaching cues: 2–3 short bullets (in addition to the above, if useful).
 - Modifications by trimester (first/second/third); note if not applicable.
-- At least one YouTube tutorial link (prefer prenatal‑appropriate).
+- Three embedded YouTube tutorial videos per exercise (prefer prenatal‑appropriate, Thai when possible) with fallback links.
 Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (adjust steps as appropriate).
 
 ## Cardio Block Details (Required)
 - Mode (treadmill/bike/pool/walk) and structure (steady, intervals, tempo).
 - Parameters: time/distance, Rate of Perceived Exertion, and rest (if intervals); include incline or cadence if relevant.
 - Alternatives: provide a non‑impact option and an equipment‑free option when possible.
-- Also include: Purpose (1–2 sentences), How (3–4 steps), and Mistakes/Warnings (3–5 items) for the chosen mode.
+- Also include: Purpose (1–2 sentences), How (3–4 steps), and Mistakes/Warnings (3–5 items) for the chosen mode, plus three embedded videos with fallback links as above.
 
 ## Professional & Friendly Style (Guideline)
 - Tone: supportive and clear. Prefer friendly micro‑copy (“breathe easy; sip water”) over jargon.
