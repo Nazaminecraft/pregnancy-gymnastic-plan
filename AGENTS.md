@@ -75,6 +75,7 @@ Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (
 ## Presentation (Required)
 - For each exercise, render a compact “spec table” first, then follow with descriptive text blocks. Do not mix parameters inline with prose.
 - Spec table rows to include when applicable: จำนวน/เวลา, ความหนัก (Rate of Perceived Exertion), พัก, อุปกรณ์, ทางเลือก/การปรับ, วิดีโอ (link to Video Library anchor).
+- Spec table “วิดีโอ” row: label the link as “ดูวิดีโอ” (do not include counts like “(3)”). The Video Library itself still hosts three links per exercise.
 - Separate descriptive blocks: วัตถุประสงค์, การเตรียมท่า, การเคลื่อนไหว, การหายใจ, ข้อควรหลีกเลี่ยง.
 
 ## Cardio Block Details (Required)
