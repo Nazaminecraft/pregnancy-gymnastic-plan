@@ -26,10 +26,10 @@ Pregnancy-safe exercise plan for a Thai woman, age 40.
 - Format: deliver a single, moderately styled HTML file unless requested otherwise.
 - Styling: semantic HTML with a small inline <style>; responsive layout; no heavy frameworks, no external fonts.
 - Visual theme: light, professional, friendly. Use white/soft‑grey surfaces, clear borders, generous whitespace, accessible contrast (WCAG AA). Avoid dark/low‑contrast themes.
-- Organization: plan must be day‑by‑day, grouped by week.
+ - Organization: แผนต้องจัดเป็นรายสัปดาห์ โดยมี 3 เซสชันต่อสัปดาห์ตามข้อกำหนด “Three‑Session Weeks (Required)”.
 - Categories: Cardio, Strength, Core & Breathing, Mobility, Pelvic Floor.
 - Equipment: treadmill, swimming pool, fixed bicycle, resistance bands, dumbbells, yoga mat; always include body‑weight alternatives.
-- YouTube links: for every exercise, include at least one relevant tutorial link (prefer prenatal‑specific channels). Use descriptive link text; open in a new tab (target="_blank" rel="noopener").
+ - วิดีโอ: สำหรับทุกท่า ให้แนบวิดีโอจาก YouTube อย่างน้อย 3 รายการ (เน้นช่องคุณภาพ/เฉพาะสายคุณแม่ตั้งครรภ์ก่อน) และฝัง (embed) วิดีโอในเพจด้วย <iframe> (lazy‑load, allowfullscreen). ให้มีลิงก์สำรองที่คลิกได้ด้วย เปิดแท็บใหม่ (target="_blank" rel="noopener").
 - Gestational Age anchor: use 25 August 2025 as 0 weeks 0 days; compute gestational age from this anchor only.
 -. No abbreviations: write terms in full (for example, use Gestational Age not GA, Rate of Perceived Exertion not RPE, minutes not min, seconds not s, repetitions not reps, dumbbell not DB). Spell month and day names in full.
 - Scope: do not add or modify files beyond `AGENTS.md` without explicit request from the project owner.
