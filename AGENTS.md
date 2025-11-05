@@ -157,15 +157,15 @@ Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (
 - Cross-check that the video’s technique is suitable for prenatal / pregnancy exercise.
 - Verify that the video is actually available and not a 'dead' search result.
 
-## Navigation & Anchors (Required)
-- Table of Contents near the top with grouped links:
-  - Group “เริ่มต้น”: links to `#howto` (วิธีใช้งานแผน) and `#reference` (คลังอ้างอิงท่า).
-  - For each week (1–40): chips to sessions `#wN-s1`, `#wN-s2`, `#wN-s3`. Do not omit or collapse weeks.
-- Anchors and IDs to use:
+## Navigation & Anchors (Updated — Compact Menu)
+- Replace the heavy Table of Contents with a compact top menu.
+- Menu controls: destination (How‑to, Exercise Reference, or Week), Week (1–40), Session (All/1/2/3), and Go/Show‑All buttons.
+- Anchors to preserve deep‑linking (unchanged):
   - How‑to: `howto`; Exercise Reference: `reference`.
-  - Week headings: `w10`, `w11`, …
-  - Session headings: `w10-s1`, `w10-s2`, `w10-s3`, `w11-s1`, …
-- Do not place raw YouTube links in session content; link only to the Exercise Reference anchors.
+  - Week headings: `wN` (e.g., `w10`). If missing in markup, insert before the week’s first session.
+  - Session headings: `wN-s1`, `wN-s2`, `wN-s3`.
+- “Show all” must reveal all weeks and sessions (no sections should be force‑hidden in CSS).
+- Remove “กำหนดการรายสัปดาห์ 1–40” verbiage and any summary language that implies duplication. Each pregnancy week stands on its own.
 
 ## Professional & Friendly Style (Guideline)
 - Tone: supportive and clear. Prefer friendly micro‑copy (“breathe easy; sip water”) over jargon.
