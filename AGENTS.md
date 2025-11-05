@@ -29,7 +29,7 @@ Pregnancy-safe exercise plan for a Thai woman, age 40.
 - Organization: include a concise Table of Contents near the top, then three sessions per week as defined in “Three‑Session Weeks (Required)”.
 - Categories: Cardio, Strength, Core and Breathing, Mobility, Pelvic Floor.
 - Equipment: treadmill, swimming pool, fixed bicycle, resistance bands, dumbbells, yoga mat; always include body‑weight alternatives.
-- Exercise Reference: create a single “Exercise Reference” section that lists each exercise with its details and three titled YouTube links (prefer high‑quality Thai content; English acceptable if Thai is unavailable). Sessions link to this section for details. Do not embed iframes.
+ - Exercise Reference: create a single “Exercise Reference” section that lists each exercise with its details and three titled YouTube links (English only; high‑quality sources). Sessions link to this section for details. Do not embed iframes.
 - Language: write all plan content in Thai. Use full words (no abbreviations). If a technical English term improves clarity, put the full English term in parentheses on first mention.
 - Gestational Age anchor: use 25 August 2025 as 0 weeks 0 days; compute gestational age from this anchor only. Do not reference EDD.
 - Scope: the output file is `index.html`. Do not add additional files beyond `AGENTS.md` and `index.html` unless explicitly requested by the project owner.
@@ -69,7 +69,7 @@ For every exercise listed under Main Work, include:
 - Mistakes/Warnings: 4–6 common pitfalls and cautions (breath‑holding/Valsalva, poor alignment, excessive range, overheating, dizziness, pain flags).
 - Coaching cues: 2–3 short bullets (in addition to the above, if useful).
 - Modifications by trimester (first/second/third); note if not applicable.
-- Three YouTube tutorial links per exercise (prefer prenatal‑appropriate, Thai when possible) listed in the Exercise Reference section.
+- Three YouTube tutorial links per exercise (English only). Prefer prenatal‑appropriate or exercise‑specific videos from reputable channels (see “Video Selection Criteria”). Links live only in the Exercise Reference section.
 Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (adjust steps as appropriate).
 
 ## Presentation (Required)
@@ -82,6 +82,18 @@ Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (
 - Parameters: time/distance, Rate of Perceived Exertion, and rest (if intervals); include incline or cadence if relevant.
 - Alternatives: provide a non‑impact option and an equipment‑free option when possible.
 - Also include: Purpose (1–2 sentences), How (3–4 steps), and Mistakes/Warnings (3–5 items) for the chosen mode, plus three titled links in the Exercise Reference as above.
+
+## Video Selection Criteria (Required)
+- Language: English only.
+- Channel credibility (meet at least one):
+  - Recognized organization or clinician (for example, NHS, Mayo Clinic, Cleveland Clinic), or
+  - Reputable fitness/rehab educators (for example, The Prehab Guys, E3Rehab, BodyFit by Amy, MamaSafeFit, Yoga With Adriene, Global Cycling Network, The Run Experience, ATHLEAN‑X, ScottHermanFitness), and
+  - Channel has meaningful audience (for example, >50k subscribers) and consistent educational content.
+- Video quality:
+  - Clear demonstration and cues; camera/audio quality is good.
+  - Strong like ratio and recent-enough publication (for example, within 10 years) unless the source is a major medical body.
+  - Content is specific to pregnancy when relevant (for example, pelvic floor, prenatal modifications). If not pregnancy‑specific, the technique must be broadly accepted and safe.
+- Safety: avoid advice that conflicts with current prenatal guidelines (for example, Valsalva/bracing directives without modification, supine work held excessively long in later trimesters, overheating).
 
 ## Navigation & Anchors (Required)
 - Table of Contents near the top with grouped links:
