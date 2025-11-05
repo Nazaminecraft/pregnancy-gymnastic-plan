@@ -100,6 +100,8 @@ Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (
 - Use English exercise names and English search terms when finding videos.
 - Prefer sources with large, active subscriber bases and strong like ratios.
 - Cross‑check that the video’s technique matches the exercise title used in the plan.
+- Cross-check that the video’s technique is suitable for prenatal / pregnancy exercise.
+- Verify that the video is actually available and not a 'dead' search result.
 
 ## Navigation & Anchors (Required)
 - Table of Contents near the top with grouped links:
