@@ -76,8 +76,7 @@
       nav.menu button { background: #f3f4f6; cursor: pointer; }
       nav.menu button:hover { background: #e5e7eb; }
       .hidden { display: none !important; }
-      /* Hide deprecated 1–40 overview section */
-      section.week[aria-labelledby="weeks-1-40"] { display: none !important; }
+      /* (note) previously hid a large overview section; now visible again */
       /* Make the 1–40 header subtle to reduce confusion */
       /* removed 1–40 overview */
       .week-meta { margin: -2px 0 10px; color: var(--muted); font-size: 0.92rem; }
@@ -581,10 +580,8 @@
         </div>
       </section>
 
-      <!-- Weekly Plan (Weeks 1–40) -->
-      <section class="week" aria-labelledby="weeks-1-40">
-        <h2 id="weeks-1-40">กำหนดการรายสัปดาห์ 1–40</h2>
-        <!-- Removed explanatory text to keep plan simple per week -->
+      <!-- Weekly Plan Container (kept for content, header removed) -->
+      <section class="week" aria-label="รายการสัปดาห์ทั้งหมด">
         <!-- Weeks 1–9 -->
         <article class="session" data-session="1" data-focus="Strength">
           <h3 id="w1-s1">เซสชันที่ 1 — เวท A (เน้นส่วนล่าง) — 35 ถึง 40 นาที — ระดับความหนักที่รับรู้ 4 ถึง 6</h3>
