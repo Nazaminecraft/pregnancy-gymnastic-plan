@@ -76,8 +76,10 @@
       nav.menu button { background: #f3f4f6; cursor: pointer; }
       nav.menu button:hover { background: #e5e7eb; }
       .hidden { display: none !important; }
+      /* Hide deprecated 1–40 overview section */
+      section.week[aria-labelledby="weeks-1-40"] { display: none !important; }
       /* Make the 1–40 header subtle to reduce confusion */
-      #weeks-1-40 { font-size: 1rem; color: var(--muted); margin-top: 0; }
+      /* removed 1–40 overview */
       .week-meta { margin: -2px 0 10px; color: var(--muted); font-size: 0.92rem; }
     </style>
   </head>
@@ -101,7 +103,6 @@
           <select id="dest-select">
             <option value="howto">วิธีใช้งานแผน</option>
             <option value="reference">คลังอ้างอิงท่า</option>
-            <option value="schedule">กำหนดการ 1–40</option>
             <option value="week">เลือกสัปดาห์…</option>
           </select>
           <label for="week-select">สัปดาห์</label>
@@ -583,7 +584,7 @@
       <!-- Weekly Plan (Weeks 1–40) -->
       <section class="week" aria-labelledby="weeks-1-40">
         <h2 id="weeks-1-40">กำหนดการรายสัปดาห์ 1–40</h2>
-        <p class="subtle">สัปดาห์ละ 3 เซสชัน ในรูปแบบโครงสร้างเดียวกันกับสัปดาห์ที่ 10–11 พร้อมลิงก์รายละเอียดไปยังคลังอ้างอิงท่า</p>
+        <!-- Removed explanatory text to keep plan simple per week -->
         <!-- Weeks 1–9 -->
         <article class="session" data-session="1" data-focus="Strength">
           <h3 id="w1-s1">เซสชันที่ 1 — เวท A (เน้นส่วนล่าง) — 35 ถึง 40 นาที — ระดับความหนักที่รับรู้ 4 ถึง 6</h3>
@@ -3451,8 +3452,8 @@
       function applyFromHash() {
         const h = location.hash.replace('#','');
         if (!h) return;
-        if (h === 'howto' || h === 'reference' || h === 'weeks-1-40') {
-          destSelect.value = (h === 'weeks-1-40') ? 'schedule' : h;
+        if (h === 'howto' || h === 'reference') {
+          destSelect.value = h;
           showSectionById('#' + h);
           return;
         }
@@ -3469,8 +3470,8 @@
 
       goBtn.addEventListener('click', () => {
         const dest = destSelect.value;
-        if (dest === 'howto' || dest === 'reference' || dest === 'schedule') {
-          const id = dest === 'schedule' ? '#weeks-1-40' : '#' + dest;
+        if (dest === 'howto' || dest === 'reference') {
+          const id = '#' + dest;
           showSectionById(id);
           location.hash = id;
         } else {
