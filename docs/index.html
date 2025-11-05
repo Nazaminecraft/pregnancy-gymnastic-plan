@@ -3068,6 +3068,74 @@
         }
       })();
 
+      // Flatten: move each week's sessions into its own <section class="week"> with <h2 id="wN">
+      (function flattenWeeksIntoSections() {
+        // Find a container that still holds multiple weeks (legacy wrapper)
+        let legacyContainer = null;
+        document.querySelectorAll('section.week').forEach(sec => {
+          if (!legacyContainer && (sec.querySelector('#w1-s1') || sec.querySelector('#w2-s1') || sec.querySelector('#w3-s1'))) {
+            legacyContainer = sec;
+          }
+        });
+        if (!legacyContainer) return;
+
+        const host = legacyContainer.parentNode;
+        const frag = document.createDocumentFragment();
+
+        // Helper to check if a week section already exists outside the legacy container
+        function existingWeekSection(n) {
+          const h2 = document.querySelector(`section.week > h2#w${n}`);
+          if (!h2) return null;
+          const sec = h2.closest('section.week');
+          return (sec && sec !== legacyContainer) ? sec : null;
+        }
+
+        for (let n = 1; n <= 40; n++) {
+          // Skip if a proper week section already exists outside the legacy container
+          if (existingWeekSection(n)) continue;
+
+          const ids = [1,2,3].map(m => `w${n}-s${m}`);
+          const articles = [];
+          ids.forEach(id => {
+            const el = legacyContainer.querySelector(`#${id}`);
+            if (el) {
+              const art = el.closest('article.session');
+              if (art && !articles.includes(art)) articles.push(art);
+            }
+          });
+          if (articles.length === 0) continue;
+
+          const sec = document.createElement('section');
+          sec.className = 'week';
+          sec.setAttribute('data-week', String(n));
+          sec.setAttribute('aria-labelledby', `w${n}`);
+
+          // Move or create the week heading
+          let h2 = legacyContainer.querySelector(`#w${n}`) || document.querySelector(`#w${n}`);
+          if (h2) {
+            // If heading is not already inside another proper week section, move it
+            const existing = existingWeekSection(n);
+            if (!existing) sec.appendChild(h2);
+          } else {
+            h2 = document.createElement('h2');
+            h2.id = `w${n}`;
+            h2.textContent = `สัปดาห์ที่ ${n}`;
+            sec.appendChild(h2);
+          }
+
+          // Append the sessions in order
+          articles.forEach(art => sec.appendChild(art));
+
+          frag.appendChild(sec);
+        }
+
+        // Insert the new week sections just before the legacy container, then remove it
+        if (frag.childNodes.length) {
+          host.insertBefore(frag, legacyContainer);
+          legacyContainer.remove();
+        }
+      })();
+
       function getReferenceSection() {
         const ref = document.getElementById('reference');
         return ref ? ref.closest('section.week') : null;
