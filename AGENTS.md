@@ -31,6 +31,7 @@ Pregnancy-safe exercise plan for a Thai woman, age 40.
 - Equipment: treadmill, swimming pool, fixed bicycle, resistance bands, dumbbells, yoga mat; always include body‑weight alternatives.
  - Exercise Reference: create a single “Exercise Reference” section that lists each exercise with its details and three titled YouTube links (English only; high‑quality sources). Sessions link to this section for details. Do not embed iframes.
 - Language: write all plan content in Thai. Use full words (no abbreviations). If a technical English term improves clarity, put the full English term in parentheses on first mention.
+- Exercise titles: use English canonical exercise names for each item (for example, “Goblet Squat to Box”, “Dumbbell Romanian Deadlift”, “Pallof Press”). Treat the English name as a distinct title; keep the rest of the content in Thai.
 - Gestational Age anchor: use 25 August 2025 as 0 weeks 0 days; compute gestational age from this anchor only. Do not reference EDD.
 - Scope: the output file is `index.html`. Do not add additional files beyond `AGENTS.md` and `index.html` unless explicitly requested by the project owner.
 
@@ -94,6 +95,11 @@ Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (
   - Strong like ratio and recent-enough publication (for example, within 10 years) unless the source is a major medical body.
   - Content is specific to pregnancy when relevant (for example, pelvic floor, prenatal modifications). If not pregnancy‑specific, the technique must be broadly accepted and safe.
 - Safety: avoid advice that conflicts with current prenatal guidelines (for example, Valsalva/bracing directives without modification, supine work held excessively long in later trimesters, overheating).
+
+## Search & Curation (Required)
+- Use English exercise names and English search terms when finding videos.
+- Prefer sources with large, active subscriber bases and strong like ratios.
+- Cross‑check that the video’s technique matches the exercise title used in the plan.
 
 ## Navigation & Anchors (Required)
 - Table of Contents near the top with grouped links:
