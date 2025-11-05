@@ -46,6 +46,26 @@ Pregnancy-safe exercise plan for a Thai woman, age 40.
 - Default is “do all”. Do not label blocks with “ทำทั้งหมด/Do all”. Only mark choice blocks as “เลือกอย่างใดอย่างหนึ่ง/Pick one”.
 - Scheduling guidance: spread the three sessions across the week with at least one rest day between (for example, Monday, Wednesday, Saturday). Optional light walking or swimming on non‑session days.
 - Weekly volume target: approximately 150 or more minutes of moderate activity across all days (adjust as needed). The three programmed sessions should provide the majority; optional easy walking can top up as desired.
+ - No cross‑references like “เหมือนสัปดาห์ที่ X / Like week X”. Every week must be fully specified with its own session content.
+
+## Progression & Trimester Scaling (Required)
+- Weeks 1–12 (Trimester 1):
+  - Strength: 3 rounds of 8–12 repetitions, Rate of Perceived Exertion 4–6; use stable patterns (Goblet Squat to Box, Dumbbell Romanian Deadlift, Resistance Band Row). Upper: Incline Dumbbell Press; lower: Supported Split Squat as needed.
+  - Core: Modified Dead Bug, Side Plank (Knees). Avoid prolonged supine holds; prioritize breathing coordination.
+  - Cardio: Incline Treadmill Walking, Stationary Bike, Pool Walking; 25–35 minutes at Rate of Perceived Exertion 4–5.
+- Weeks 13–20 (Trimester 2 early):
+  - Maintain strength structure but monitor bump‑related comfort; add Suitcase Carry for anti‑lateral flexion as tolerated.
+  - Keep Modified Dead Bug as primary supine core only briefly and with comfort; reduce hold times if needed.
+  - Cardio rotates; keep Rate of Perceived Exertion 4–5.
+- Weeks 21–28 (Trimester 2 late):
+  - Swap Modified Dead Bug → Bird Dog as the primary core drill; keep Side Plank (Knees).
+  - Reduce absolute loading if breath/pressure strategies degrade; bias bike/pool for cardio.
+- Weeks 29–36 (Trimester 3 early):
+  - Reduce to 2–3 sets where needed; keep movements crisp and controlled; Rate of Perceived Exertion 3–5.
+  - Emphasize mobility (Cat‑Cow, Thread the Needle) and anti‑rotation (Pallof Press); keep split stance work supported.
+- Weeks 37–40 (Trimester 3 late):
+  - Prioritize comfort and mobility; 2 sets max for strength, lighter loads, no straining; gentle cardio 20–30 minutes (bike/pool or easy treadmill).
+  - Always include short Pelvic Floor block (gentle Kegels) with full relaxation.
 
 ## Default Prescriptions and Execution Key (Required)
 - Strength default: three rounds (sets) of eight to twelve repetitions per exercise, Rate of Perceived Exertion four to six, rest sixty to ninety seconds between sets; tempo about two seconds down, no pause, two seconds up; exhale on effort.
@@ -106,7 +126,7 @@ Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (
 ## Navigation & Anchors (Required)
 - Table of Contents near the top with grouped links:
   - Group “เริ่มต้น”: links to `#howto` (วิธีใช้งานแผน) and `#reference` (คลังอ้างอิงท่า).
-  - For each week: link to `#wN` and chips to sessions `#wN-s1`, `#wN-s2`, `#wN-s3`.
+  - For each week (1–40): chips to sessions `#wN-s1`, `#wN-s2`, `#wN-s3`. Do not omit or collapse weeks.
 - Anchors and IDs to use:
   - How‑to: `howto`; Exercise Reference: `reference`.
   - Week headings: `w10`, `w11`, …
