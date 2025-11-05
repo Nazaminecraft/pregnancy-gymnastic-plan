@@ -76,6 +76,8 @@
       nav.menu button { background: #f3f4f6; cursor: pointer; }
       nav.menu button:hover { background: #e5e7eb; }
       .hidden { display: none !important; }
+      /* Make the 1–40 header subtle to reduce confusion */
+      #weeks-1-40 { font-size: 1rem; color: var(--muted); margin-top: 0; }
       .week-meta { margin: -2px 0 10px; color: var(--muted); font-size: 0.92rem; }
     </style>
   </head>
@@ -3379,6 +3381,26 @@
         frag.appendChild(opt);
       }
       weekSelect.appendChild(frag);
+
+      // Ensure each week has a dedicated headline (h2#wN);
+      // If missing, insert it just before the first session (#wN-s1)
+      (function ensureWeekHeadlines() {
+        for (let i = 1; i <= 40; i++) {
+          const id = `w${i}`;
+          if (!document.getElementById(id)) {
+            const first = document.getElementById(`w${i}-s1`);
+            if (first) {
+              const h2 = document.createElement('h2');
+              h2.id = id;
+              h2.textContent = `สัปดาห์ที่ ${i}`;
+              const art = first.closest('article.session');
+              if (art && art.parentNode) {
+                art.parentNode.insertBefore(h2, art);
+              }
+            }
+          }
+        }
+      })();
 
       function showAll() {
         document.querySelectorAll('section.week').forEach(s => s.classList.remove('hidden'));
