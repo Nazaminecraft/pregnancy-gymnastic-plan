@@ -129,7 +129,7 @@ Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (
 ## Exercise Reference Layout (Guideline)
 - Section id: `reference`; anchors per exercise: `ref-<slug>`.
 - Layout: grid of cards (`.ref-grid`) with each card as an `<article>` containing:
-  - `<h3>` exercise name
+  - `<h3>` exercise name (English canonical title; match session names)
   - “รายละเอียดท่า” block with วัตถุประสงค์, การเตรียมท่า, การเคลื่อนไหว, การหายใจ, ข้อควรหลีกเลี่ยง
-  - A short list of three titled YouTube links
+  - A short list of three titled YouTube links (links must be inside the card — do not place links outside the `<article>`)
 - Sessions must not duplicate these details; link via the “รายละเอียด” row only.
