@@ -33,7 +33,7 @@ Pregnancy-safe exercise plan for a Thai woman, age 40.
 - Language: write all plan content in Thai. Use full words (no abbreviations). If a technical English term improves clarity, put the full English term in parentheses on first mention.
 - Exercise titles: use English canonical exercise names for each item (for example, “Goblet Squat to Box”, “Dumbbell Romanian Deadlift”, “Pallof Press”). Treat the English name as a distinct title; keep the rest of the content in Thai.
 - Gestational Age anchor: use 25 August 2025 as 0 weeks 0 days; compute gestational age from this anchor only. Do not reference EDD.
-- Scope: the output file is `index.html`. Do not add additional files beyond `AGENTS.md` and `index.html` unless explicitly requested by the project owner.
+- Scope: the deployable output file is `docs/index.html`. Keep files limited to `AGENTS.md` and `docs/index.html` unless explicitly requested by the project owner.
 
 ## Three‑Session Weeks (Required)
 - Group sessions by Week N. Keep week headings concise (for example, “สัปดาห์ที่ 10”). If useful, include gestational age and date range as a subtle meta line directly under the H2 and/or as data attributes — not inside the main heading.
