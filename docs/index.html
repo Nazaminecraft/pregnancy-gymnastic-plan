@@ -3068,17 +3068,27 @@
         }
       })();
 
+      function getReferenceSection() {
+        const ref = document.getElementById('reference');
+        return ref ? ref.closest('section.week') : null;
+      }
+
       function showAll() {
         document.querySelectorAll('section.week').forEach(s => s.classList.remove('hidden'));
         document.querySelectorAll('section.week article.session').forEach(a => a.classList.remove('hidden'));
       }
 
+      // Do NOT hide Exercise Reference — keep it visible for in-session links
       function hideAll() {
-        document.querySelectorAll('section.week').forEach(s => s.classList.add('hidden'));
+        const refSec = getReferenceSection();
+        document.querySelectorAll('section.week').forEach(s => {
+          if (refSec && s === refSec) return; // keep Exercise Reference visible
+          s.classList.add('hidden');
+        });
       }
 
       function showSectionById(id) {
-        hideAll();
+        hideAll(); // keeps Exercise Reference visible
         const target = document.querySelector(id.startsWith('#') ? id : '#' + id);
         let wrapper = target ? target.closest('section.week') : null;
         if (!wrapper && target && target.tagName.toLowerCase() === 'section') wrapper = target;

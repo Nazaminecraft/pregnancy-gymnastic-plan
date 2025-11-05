@@ -165,6 +165,7 @@ Applies to warm‑up, mobility, core, pelvic‑floor, and cardio items as well (
   - Week headings: `wN` (e.g., `w10`). If missing in markup, insert before the week’s first session.
   - Session headings: `wN-s1`, `wN-s2`, `wN-s3`.
 - “Show all” must reveal all weeks and sessions (no sections should be force‑hidden in CSS).
+- Exercise Reference section (`#reference`) must remain visible at all times so in‑session “ดูรายละเอียด” links work even when filtering.
 - Remove “กำหนดการรายสัปดาห์ 1–40” verbiage and any summary language that implies duplication. Each pregnancy week stands on its own.
 
 ## Professional & Friendly Style (Guideline)
