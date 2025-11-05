@@ -67,6 +67,40 @@ Pregnancy-safe exercise plan for a Thai woman, age 40.
   - Prioritize comfort and mobility; 2 sets max for strength, lighter loads, no straining; gentle cardio 20–30 minutes (bike/pool or easy treadmill).
   - Always include short Pelvic Floor block (gentle Kegels) with full relaxation.
 
+## Prenatal Safety & Medical Guidelines (Authoritative)
+Use the following evidence‑informed rules when creating or editing sessions. These are distilled from ACOG, WHO, NHS and RCOG guidance (links below). Prefer the talk test and Rate of Perceived Exertion (RPE) for intensity.
+
+- Weekly volume: aim for ≥150 minutes of moderate activity (can be split across days). Sessions in this plan provide most of that volume; easy walking or pool time may top up as desired.
+- Intensity: target RPE 4–6 (able to speak in full sentences). Avoid “all‑out” or maximal efforts; leave 2–4 reps in reserve on strength work.
+- Temperature and hydration: avoid overheating (skip hot yoga/sauna/hot tubs), train in well‑ventilated spaces, sip water throughout, adapt to climate.
+- Positions and supine time: from mid‑pregnancy limit prolonged supine lying; if any supine work is used in Weeks 13–20 keep it brief and symptom‑free; from Week 21 prefer side‑lying, quadruped, seated or incline setups.
+- Impact and risk: avoid contact sports, activities with high fall risk (e.g., downhill skiing, horseback riding), and scuba diving.
+- Breathing and pressure: avoid breath‑holding/Valsalva; exhale on exertion; prioritize ribcage/diaphragm and pelvic‑floor coordination.
+- Warning signs — stop exercise and seek care if any occur: vaginal bleeding; amniotic fluid leakage; regular painful contractions; chest pain; shortness of breath at rest; dizziness or syncope; headache; calf pain/swelling; muscle weakness affecting balance; decreased fetal movement; concerning pelvic or abdominal pain.
+- Pelvic floor: include brief, gentle Kegels with equal relaxation most days; emphasize full release after each contraction.
+- Strength loading: progress gradually; in Weeks 29–36 reduce to 2–3 sets as needed; Weeks 37–40 cap at 2 sets and keep loads light to moderate.
+- Cardio mode/duration: prefer low‑impact modes (bike/pool/walking). Weeks 1–28 use 25–35 minutes at RPE 4–5; Weeks 29–36 use 25–30 minutes; Weeks 37–40 use 20–30 minutes as comfortable.
+
+Authoritative sources for reference
+- ACOG — Physical Activity and Exercise During Pregnancy and the Postpartum Period (Committee Opinion No. 804, 2020; reaffirmed) — https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period
+- WHO — Guidelines on Physical Activity and Sedentary Behaviour (2020) — pregnant and postpartum — https://www.who.int/publications/i/item/9789240015128
+- NHS — Exercise in pregnancy — https://www.nhs.uk/pregnancy/keeping-well/exercise/
+- RCOG — Exercise in pregnancy — https://www.rcog.org.uk/for-the-public/browse-our-patient-information/exercise-in-pregnancy/
+
+## Editor Checklist (Enforce on Every Change)
+Before committing changes to `docs/index.html`, verify:
+- TOC lists Weeks 1–40 with session chips linking to `#wN-s1/2/3` and all anchors exist.
+- No cross‑references like “เหมือนสัปดาห์ที่ X”; each week has complete, self‑contained session content.
+- Trimester scaling is followed (see Progression & Trimester Scaling above):
+  - Weeks 1–12: Modified Dead Bug allowed briefly; Side Plank (Knees); cardio 25–35 min.
+  - Weeks 13–20: keep supine work brief; add Suitcase Carry as tolerated.
+  - Weeks 21–28: swap to Bird Dog; bias bike/pool; reduce load if breath/pressure strategies slip.
+  - Weeks 29–36: 2–3 sets as needed; emphasize mobility and anti‑rotation (Pallof Press).
+  - Weeks 37–40: comfort first; max 2 sets; gentle cardio 20–30 min; always include short pelvic‑floor block.
+- Each exercise lists equipment plus a body‑weight alternative; each session includes a pelvic‑floor block.
+- Use RPE and talk test for intensity; avoid HR‑only prescriptions.
+- Include “stop” criteria language and hydration/heat reminders in the How‑to section.
+
 ## Default Prescriptions and Execution Key (Required)
 - Strength default: three rounds (sets) of eight to twelve repetitions per exercise, Rate of Perceived Exertion four to six, rest sixty to ninety seconds between sets; tempo about two seconds down, no pause, two seconds up; exhale on effort.
 - Core default: two to three rounds of six to ten slow repetitions or fifteen to thirty second holds; rest thirty to forty‑five seconds.
