@@ -58,7 +58,7 @@
       article.video-group ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
       article.video-group ul li a { display: block; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: #f9fafb; }
       article.video-group ul li a:hover { text-decoration: none; background: #f3f4f6; }
-      nav.toc { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin: 10px 0 18px; }
+      nav.toc { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin: 10px 0 18px; display: none !important; }
       nav.toc .toc-title { margin: 0 0 8px; font-size: 1rem; color: #0f172a; font-weight: 700; }
       nav.toc .toc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
       nav.toc .toc-group { border: 1px solid var(--line); background: #f9fafb; border-radius: 10px; padding: 10px; }
@@ -67,6 +67,15 @@
       nav.toc .toc-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
       nav.toc .toc-chip { display: inline-block; border: 1px solid var(--line); background: #ffffff; border-radius: 999px; padding: 4px 10px; font-size: 0.9rem; color: #1f2937; text-decoration: none; }
       nav.toc .toc-chip:hover { text-decoration: none; border-color: #e5e7eb; background: #f3f4f6; }
+      /* Compact Menu */
+      nav.menu { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin: 10px 0 18px; position: sticky; top: 0; z-index: 10; }
+      nav.menu .menu-title { margin: 0 0 8px; font-size: 1rem; color: #0f172a; font-weight: 700; }
+      nav.menu .controls { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; }
+      nav.menu label { font-size: 0.9rem; color: var(--muted); }
+      nav.menu select, nav.menu button { height: 34px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: #111827; }
+      nav.menu button { background: #f3f4f6; cursor: pointer; }
+      nav.menu button:hover { background: #e5e7eb; }
+      .hidden { display: none !important; }
       .week-meta { margin: -2px 0 10px; color: var(--muted); font-size: 0.92rem; }
     </style>
   </head>
@@ -82,6 +91,30 @@
         </div>
         <div class="subtle">คำแนะนำทั่วไปเท่านั้น ไม่ใช่คำแนะนำทางการแพทย์ คงความหนักระดับปานกลาง (ระดับความหนักที่รับรู้ 4 ถึง 6) ใช้การพูดทดสอบ (ยังพูดเป็นประโยคได้) ดื่มน้ำเพียงพอ และหลีกเลี่ยงการร้อนเกินไป</div>
       </header>
+
+      <nav class="menu" aria-label="เมนูนำทางแบบย่อ">
+        <div class="menu-title">เมนูนำทาง</div>
+        <div class="controls">
+          <label for="dest-select">ไปที่</label>
+          <select id="dest-select">
+            <option value="howto">วิธีใช้งานแผน</option>
+            <option value="reference">คลังอ้างอิงท่า</option>
+            <option value="schedule">กำหนดการ 1–40</option>
+            <option value="week">เลือกสัปดาห์…</option>
+          </select>
+          <label for="week-select">สัปดาห์</label>
+          <select id="week-select"></select>
+          <label for="sess-select">เซสชัน</label>
+          <select id="sess-select">
+            <option value="all">ทั้งหมด</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <button id="go-btn" aria-label="ไป">ไป</button>
+          <button id="reset-btn" aria-label="แสดงทั้งหมด">แสดงทั้งหมด</button>
+        </div>
+      </nav>
 
       <nav class="toc" aria-label="สารบัญ">
         <div class="toc-title">สารบัญ</div>
@@ -3323,5 +3356,121 @@
         เป้าหมายรายสัปดาห์: รวมเวลาประมาณ 150 นาทีขึ้นไปของกิจกรรมความหนักปานกลาง โดยครอบคลุม 3 เซสชันนี้ และอาจเติมด้วยการเดินช้า/ว่ายน้ำแบบสบายๆ ได้ ปรับเพิ่มแบบค่อยเป็นค่อยไป หลีกเลี่ยงการร้อนเกินไป ผ่อนลมหายใจตอนออกแรง ให้ความสำคัญกับท่าที่มั่นคง หากมีอาการผิดปกติให้ปรับลดหรือหยุดและปรึกษาผู้เชี่ยวชาญ
       </p>
     </div>
+  <script>
+    (function() {
+      const weekSelect = document.getElementById('week-select');
+      const sessSelect = document.getElementById('sess-select');
+      const destSelect = document.getElementById('dest-select');
+      const goBtn = document.getElementById('go-btn');
+      const resetBtn = document.getElementById('reset-btn');
+
+      if (!weekSelect) { return; }
+
+      // Populate week options 1–40
+      const frag = document.createDocumentFragment();
+      const empty = document.createElement('option');
+      empty.value = '';
+      empty.textContent = '—';
+      frag.appendChild(empty);
+      for (let i = 1; i <= 40; i++) {
+        const opt = document.createElement('option');
+        opt.value = String(i);
+        opt.textContent = i;
+        frag.appendChild(opt);
+      }
+      weekSelect.appendChild(frag);
+
+      function showAll() {
+        document.querySelectorAll('section.week').forEach(s => s.classList.remove('hidden'));
+        document.querySelectorAll('section.week article.session').forEach(a => a.classList.remove('hidden'));
+      }
+
+      function hideAll() {
+        document.querySelectorAll('section.week').forEach(s => s.classList.add('hidden'));
+      }
+
+      function showSectionById(id) {
+        hideAll();
+        const target = document.querySelector(id.startsWith('#') ? id : '#' + id);
+        let wrapper = target ? target.closest('section.week') : null;
+        if (!wrapper && target && target.tagName.toLowerCase() === 'section') wrapper = target;
+        if (wrapper) {
+          wrapper.classList.remove('hidden');
+          wrapper.querySelectorAll('article.session').forEach(a => a.classList.remove('hidden'));
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+
+      function showWeekSession(week, sess) {
+        hideAll();
+        const head = document.getElementById(`w${week}`);
+        const wrapper = head ? head.closest('section.week') : null;
+        if (!wrapper) return;
+        wrapper.classList.remove('hidden');
+        const allSessions = wrapper.querySelectorAll('article.session');
+        allSessions.forEach(a => a.classList.add('hidden'));
+        if (sess === 'all') {
+          allSessions.forEach(a => a.classList.remove('hidden'));
+          location.hash = `#w${week}`;
+          head.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          const target = document.getElementById(`w${week}-s${sess}`);
+          const art = target ? target.closest('article.session') : null;
+          if (art) {
+            art.classList.remove('hidden');
+            location.hash = `#w${week}-s${sess}`;
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          } else {
+            allSessions.forEach(a => a.classList.remove('hidden'));
+          }
+        }
+      }
+
+      function applyFromHash() {
+        const h = location.hash.replace('#','');
+        if (!h) return;
+        if (h === 'howto' || h === 'reference' || h === 'weeks-1-40') {
+          destSelect.value = (h === 'weeks-1-40') ? 'schedule' : h;
+          showSectionById('#' + h);
+          return;
+        }
+        const m = h.match(/^w(\d+)(?:-s(\d))?$/);
+        if (m) {
+          const wk = m[1];
+          const ss = m[2] || 'all';
+          destSelect.value = 'week';
+          weekSelect.value = wk;
+          sessSelect.value = ss;
+          showWeekSession(wk, ss);
+        }
+      }
+
+      goBtn.addEventListener('click', () => {
+        const dest = destSelect.value;
+        if (dest === 'howto' || dest === 'reference' || dest === 'schedule') {
+          const id = dest === 'schedule' ? '#weeks-1-40' : '#' + dest;
+          showSectionById(id);
+          location.hash = id;
+        } else {
+          const wk = weekSelect.value || '1';
+          const ss = sessSelect.value || 'all';
+          showWeekSession(wk, ss);
+        }
+      });
+
+      resetBtn.addEventListener('click', () => {
+        showAll();
+        destSelect.value = 'howto';
+        weekSelect.value = '';
+        sessSelect.value = 'all';
+        history.replaceState(null, '', ' ');
+        const how = document.getElementById('howto');
+        if (how) how.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      window.addEventListener('hashchange', applyFromHash);
+      applyFromHash();
+    })();
+  </script>
   </body>
   </html>
