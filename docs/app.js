@@ -53,6 +53,11 @@
 
   // Flatten: move each week's sessions into its own <section class="week"> with <h2 id="wN">
   (function flattenWeeksIntoSections() {
+    // If sections already carry explicit data-week attributes, the layout is normalized.
+    if (document.querySelector('section.week[data-week]')) {
+      return;
+    }
+
     // Find a container that still holds multiple weeks (legacy wrapper)
     let legacyContainer = null;
     document.querySelectorAll('section.week').forEach(sec => {
