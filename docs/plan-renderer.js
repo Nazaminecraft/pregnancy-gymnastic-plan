@@ -2,35 +2,6 @@
   const PLAN_WEEKS_DATA = Array.isArray(window.PLAN_WEEKS) ? window.PLAN_WEEKS : [];
   if (!PLAN_WEEKS_DATA.length) return;
 
-  const MS_PER_DAY = 86400000;
-  const ANCHOR = new Date(Date.UTC(2025, 7, 25));
-  const TH_MONTHS = [
-    'มกราคม',
-    'กุมภาพันธ์',
-    'มีนาคม',
-    'เมษายน',
-    'พฤษภาคม',
-    'มิถุนายน',
-    'กรกฎาคม',
-    'สิงหาคม',
-    'กันยายน',
-    'ตุลาคม',
-    'พฤศจิกายน',
-    'ธันวาคม',
-  ];
-
-  function addDays(base, days) {
-    return new Date(base.getTime() + days * MS_PER_DAY);
-  }
-
-  function formatThaiRange(start, end) {
-    const sameMonth = start.getMonth() === end.getMonth() && start.getFullYear() === end.getFullYear();
-    if (sameMonth) {
-      return `${start.getDate()} ถึง ${end.getDate()} ${TH_MONTHS[start.getMonth()]} ${start.getFullYear()}`;
-    }
-    return `${start.getDate()} ${TH_MONTHS[start.getMonth()]} ถึง ${end.getDate()} ${TH_MONTHS[end.getMonth()]} ${end.getFullYear()}`;
-  }
-
   function focusTag(focus, sessionNumber) {
     const text = (focus || '').toLowerCase();
     if (text.includes('คาร์ดิโอ') || text.includes('cardio')) return 'Cardio';
@@ -99,9 +70,7 @@
 
       const meta = document.createElement('div');
       meta.className = 'week-meta';
-      const start = addDays(ANCHOR, weekNum * 7);
-      const end = addDays(start, 6);
-      meta.textContent = `อายุครรภ์ ${weekNum} สัปดาห์ 0 วัน ถึง ${weekNum} สัปดาห์ 6 วัน — ${formatThaiRange(start, end)}`;
+      meta.textContent = `อายุครรภ์สัปดาห์ที่ ${weekNum} — วัน 0 ถึง วัน 6 (กล่าวถึงเพื่อกำหนดโครงสร้างการฝึกเท่านั้น)`;
       sec.appendChild(meta);
 
       sessions.forEach(([sessNum, focus, duration, rpe, metaText, blocks]) => {

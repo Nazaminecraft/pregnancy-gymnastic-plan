@@ -1,7 +1,5 @@
 (function() {
   const weekSelect = document.getElementById('week-select');
-  const sessSelect = document.getElementById('sess-select');
-  const destSelect = document.getElementById('dest-select');
   const goBtn = document.getElementById('go-btn');
   const resetBtn = document.getElementById('reset-btn');
   const rootEl = document.documentElement;
@@ -143,18 +141,6 @@
     });
   }
 
-  function showSectionById(id) {
-    hideAll(); // keeps Exercise Reference visible
-    const target = document.querySelector(id.startsWith('#') ? id : '#' + id);
-    let wrapper = target ? target.closest('section.week') : null;
-    if (!wrapper && target && target.tagName.toLowerCase() === 'section') wrapper = target;
-    if (wrapper) {
-      wrapper.classList.remove('hidden');
-      wrapper.querySelectorAll('article.session').forEach(a => a.classList.remove('hidden'));
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }
-
   function showWeekSession(week, sess) {
     hideAll();
     const head = document.getElementById(`w${week}`);
@@ -184,39 +170,34 @@
     const h = location.hash.replace('#','');
     if (!h) return;
     if (h === 'howto' || h === 'reference') {
-      destSelect.value = h;
-      showSectionById('#' + h);
+      weekSelect.value = '';
+      showAll();
+      const target = document.getElementById(h);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       return;
     }
     const m = h.match(/^w(\d+)(?:-s(\d))?$/);
     if (m) {
       const wk = m[1];
       const ss = m[2] || 'all';
-      destSelect.value = 'week';
       weekSelect.value = wk;
-      sessSelect.value = ss;
       showWeekSession(wk, ss);
     }
   }
 
   goBtn.addEventListener('click', () => {
-    const dest = destSelect.value;
-    if (dest === 'howto' || dest === 'reference') {
-      const id = '#' + dest;
-      showSectionById(id);
-      location.hash = id;
-    } else {
-      const wk = weekSelect.value || '1';
-      const ss = sessSelect.value || 'all';
-      showWeekSession(wk, ss);
+    const wk = weekSelect.value;
+    if (!wk) {
+      showAll();
+      history.replaceState(null, '', ' ');
+      return;
     }
+    showWeekSession(wk, 'all');
   });
 
   resetBtn.addEventListener('click', () => {
     showAll();
-    destSelect.value = 'howto';
     weekSelect.value = '';
-    sessSelect.value = 'all';
     history.replaceState(null, '', ' ');
     const how = document.getElementById('howto');
     if (how) how.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -225,4 +206,3 @@
   window.addEventListener('hashchange', applyFromHash);
   applyFromHash();
 })();
-
